@@ -1,6 +1,7 @@
 .swiper-container {
     overflow: hidden;
     padding-bottom: 15px;
+    height: 30em;
 }
 
 .swiper-button-prev,
@@ -8,7 +9,6 @@
     display: inline-flex;
     width: 13px;
     height: 13px;
-    top: 30%;
     z-index: 9;
     cursor: pointer;
 }
