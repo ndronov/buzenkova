@@ -1,0 +1,27 @@
+@import "fonts";
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "partials/header";
+// @import "partials/header-mob";
+@import "partials/burger-menu";
+@import "partials/header-desk";
+@import "partials/intro";
+@import "partials/swiper-slide";
+@import "partials/swiper";
+
+html {
+    scroll-behavior: smooth;
+}
+
+// .container {
+//     padding: 46px 16px 0;
+
+//     @media (min-width: 768px) {
+//         padding: 53px 80px 0;
+//     }
+
+//     @media (min-width: 1260px) {
+//         padding: 80px 120px 0;
+//     }
+// }
