@@ -15,3 +15,12 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin title-font {
+    font-family: "Dela Gothic One", "Arial", sans-serif;
+    line-height: 1.1;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,53 @@
+.swiper-container {
+    overflow: hidden;
+    padding-bottom: 15px;
+    height: 30em;
+    position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: inline-flex;
+    width: 13px;
+    height: 13px;
+    z-index: 9;
+    cursor: pointer;
+
+    @media (min-width: 1200px) {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.swiper-button-prev {
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
+    transform: rotate(-45deg);
+
+    @media (min-width: 640px) {
+        margin-left: 35px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 75px;
+    }
+}
+
+.swiper-button-next {
+    border-top: 2px solid $black;
+    border-right: 2px solid $black;
+    transform: rotate(45deg);
+
+    @media (min-width: 640px) {
+        margin-right: 35px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 75px;
+    }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}

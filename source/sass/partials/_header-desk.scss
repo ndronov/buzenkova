@@ -23,7 +23,7 @@
         color: $black;
         position: relative;
 
-        @media (min-width: 1260px) {
+        @media (min-width: 1200px) {
             font-size: 24px;
         }
     }
@@ -32,14 +32,14 @@
 .header-desk__name--color {
     color: $main;
 
-    @media (min-width: 1260px) {
+    @media (min-width: 1200px) {
         font-size: 32px;
         align-self: flex-end;
     }
 }
 
 .header-desk__item--mod {
-    @media (min-width: 1260px) {
+    @media (min-width: 1200px) {
         margin-left: auto;
     }
 }
