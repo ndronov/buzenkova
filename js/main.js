@@ -1,1 +1,1 @@
-import"./burger-menu.js";import"./elements-appearance.js";import"./swiper.js";
+import"./burger-menu.js";import"./elements-appearance.js";import"./intro-swiper.js";import"./ideas-swiper.js";

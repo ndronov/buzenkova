@@ -1,1 +1,0 @@
-document.querySelector(".video-swiper")&&new Swiper(".video-swiper",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},keyboard:{enabled:!0,pageUpDown:!0},loop:!0});
