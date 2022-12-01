@@ -1,0 +1,26 @@
+.benefits {
+    &__heading {
+        @include title-font;
+        font-size: 24px;
+    }
+
+    &__nastya {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        @include ul-style;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__item {
+        font-family: "Montserrat", "Arial", sans-serif;
+    }
+}
+
+.benefits__item:not(:last-child) {
+    padding-bottom: 20px;
+}

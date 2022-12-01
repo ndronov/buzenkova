@@ -1,8 +1,13 @@
 .swiper-container {
     overflow: hidden;
     padding-bottom: 15px;
-    height: 30em;
     position: relative;
+}
+
+.video-swiper {
+    height: 30em;
+    top: -65px;
+    // padding-top: 60px;
 }
 
 .swiper-button-prev,
@@ -10,7 +15,7 @@
     display: inline-flex;
     width: 13px;
     height: 13px;
-    z-index: 9;
+    z-index: 1;
     cursor: pointer;
 
     @media (min-width: 1200px) {

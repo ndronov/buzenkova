@@ -9,5 +9,6 @@ if(document.querySelector(".ideas__swiper")) {
             pageUpDown: true,
         },
         loop: true,
+        // nested: true,
     });
 }

@@ -1,9 +1,36 @@
 .intro {
 
-    padding-bottom: 80px;
+    margin-top: -240px;
+    padding-top: 197px;
+    position: relative;
+    padding-bottom: 60px;
+    background: url("../img/pics/photo/background-intro.jpg") no-repeat;
+    background-size: 120%;
+    background-position: center;
+
+    @media (min-width: 490px) {
+        background-size: 130%;
+        background-position: 50% -50%;
+    }
+
+    @media (min-width: 558px) {
+        background-size: 140%;
+        background-position: 50% 0;
+    }
+
+    @media (min-width: 920px) {
+        background-size: 100%;
+    }
+
+    @media (min-width: 1440px) {
+        background-size: 100%;
+        background-position: 50% 27%;
+    }
 
     &__heading {
         @include title-font;
+        position: relative;
+        top: 155px;
 
         @media (min-width: 768px) {
             font-size: 20px;
@@ -12,5 +39,15 @@
         @media (min-width: 1260px) {
             font-size: 28px;
         }
+
+        @media (min-width: 1440px) {
+            font-size: 36px;
+        }
+    }
+
+    &__background {
+        width: 100%;
+        position: absolute;
+        top: 0;
     }
 }
