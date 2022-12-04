@@ -1,26 +1,174 @@
 .benefits {
+    @include flex;
+    flex-direction: column;
+
+    &__wrapper {
+        @include flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 100px;
+        max-width: 1440px;
+    }
+
     &__heading {
         @include title-font;
         font-size: 24px;
+
+        @media (min-width: 920px) {
+            font-size: 30px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 46px;
+        }
+
+        @media (min-width: 1440px) {
+            padding-bottom: 80px;
+        }
     }
 
     &__nastya {
         width: 100%;
         max-width: 500px;
         margin-bottom: 20px;
+
+        @media (min-width: 920px) {
+            display: none;
+        }
+    }
+
+    &__nastya-desk {
+        display: none;
+
+        @media (min-width: 920px) {
+            display: block;
+            height: 68%;
+            left: 270px;
+            position: absolute;
+            z-index: 1;
+            bottom: 38px;
+        }
+
+        @media (min-width: 1200px) {
+            left: 320px;
+        }
+
+        @media (min-width: 1440px) {
+            left: 450px;
+        }
     }
 
     &__list {
         @include ul-style;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 15px 130px;
+
+        @media (min-width: 920px) {
+            padding-left: 560px;
+        }
+
+        @media (min-width: 1200px) {
+            padding-right: 85px;
+            padding-left: 615px;
+        }
+
+        @media (min-width: 1440px) {
+            padding-bottom: 320px;
+            padding-right: 100px;
+            padding-left: 695px;
+        }
     }
 
     &__item {
         font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 16px;
+
+        @media (min-width: 1200px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 24px;
+        }
+    }
+
+    &__contact {
+        background-color: $main;
+        display: flex;
+        justify-content: center;
+        width: 160%;
+    }
+
+    &__link {
+        font-family: "Montserrat", "Arial", sans-serif;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 7px;
+        cursor: pointer;
+        transition: transform 1s;
+    }
+
+    &__social {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.benefits__link:hover {
+    transform: scale(1.25);
+}
+
+.benefits__wrapper::before {
+
+    display: none;
+
+    @media (min-width: 920px) {
+        display: block;
+        position: absolute;
+        content: "";
+        background: url("../img/pics/elements/nastya.png") no-repeat;
+        width: 370px;
+        height: 585px;
+        z-index: 10;
+        left: -97px;
+        bottom: 38px;
+        background-size: cover;
+
+        @media (min-width: 1200px) {
+            left: -50px;
+        }
+
+        @media (min-width: 1440px) {
+            width: 630px;
+            height: 945px;
+            left: -130px;
+        }
     }
 }
 
 .benefits__item:not(:last-child) {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.benefits__list::after {
+    position: absolute;
+    content: "";
+    background: url("../img/pics/elements/pie.png") no-repeat;
+    width: 235px;
+    height: 112px;
+    background-size: cover;
+    right: 0;
+    bottom: 38px;
+
+    @media (min-width: 1440px) {
+        width: 290px;
+        height: 150px;
+    }
+}
+
+.social-link {
+    width: 100px;
+    height: 100px;
 }

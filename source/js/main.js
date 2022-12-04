@@ -3,3 +3,4 @@ import "./elements-appearance.js";
 import "./intro-swiper.js";
 import "./ideas-swiper.js";
 import "./timeline.js";
+import "./benefits-social.js";
