@@ -6,7 +6,6 @@
         @include flex;
         flex-direction: column;
         position: relative;
-        margin-bottom: 100px;
         max-width: 1440px;
     }
 
@@ -46,7 +45,7 @@
             left: 270px;
             position: absolute;
             z-index: 1;
-            bottom: 38px;
+            bottom: 0;
         }
 
         @media (min-width: 1200px) {
@@ -95,7 +94,7 @@
         background-color: $main;
         display: flex;
         justify-content: center;
-        width: 160%;
+        width: 100%;
     }
 
     &__link {
@@ -133,7 +132,7 @@
         height: 585px;
         z-index: 10;
         left: -97px;
-        bottom: 38px;
+        bottom: 0;
         background-size: cover;
 
         @media (min-width: 1200px) {
@@ -160,7 +159,7 @@
     height: 112px;
     background-size: cover;
     right: 0;
-    bottom: 38px;
+    bottom: 0;
 
     @media (min-width: 1440px) {
         width: 290px;
