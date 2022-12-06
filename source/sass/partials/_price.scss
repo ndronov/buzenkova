@@ -116,22 +116,6 @@
     }
 }
 
-// .optimum__link {
-//     @media (min-width: 1200px) {
-//         display: flex;
-//         flex-direction: row;
-//         gap: 40px;
-//     }
-// }
-
-// .coordination__link {
-//     @media (min-width: 1200px) {
-//         display: flex;
-//         flex-direction: column-reverse;
-//         gap: 30px;
-//     }
-// }
-
 .basic {
     @media (min-width: 1200px) {
         position: absolute;
@@ -151,13 +135,13 @@
         position: absolute;
         right: 0;
         top: 240px;
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
     }
 
     &__link {
         @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
             align-items: flex-end;
         }
     }
