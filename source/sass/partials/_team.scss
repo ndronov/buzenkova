@@ -1,0 +1,18 @@
+.team {
+    padding-bottom: 120px;
+
+    &__title {
+        @include title-font;
+        font-size: 24px;
+    }
+
+    &__wrapper {
+        @include flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    &__content {
+        max-width: 320px;
+    }
+}

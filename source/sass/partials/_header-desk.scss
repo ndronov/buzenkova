@@ -31,6 +31,7 @@
 
 .header-desk__name--color {
     color: $main;
+    position: relative;
 
     @media (min-width: 1200px) {
         font-size: 32px;
@@ -62,6 +63,24 @@
 }
 
 .header-desk__name:hover::after {
+    opacity: 1;
+    bottom: -2px;
+}
+
+.header-desk__name--color::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid $main;
+    box-shadow: 0 -1px 0 0 $main inset;
+    transition: all 0.3s ease;
+}
+
+.header-desk__name--color:hover::after {
     opacity: 1;
     bottom: -2px;
 }

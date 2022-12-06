@@ -36,9 +36,9 @@
         font-size: 16px;
         background-color: $main;
         border: none;
+        transition: transform 1s;
         padding: 10px 25px;
         border-radius: 10px;
-        transition: transform 1s;
         cursor: pointer;
     }
 }
@@ -52,12 +52,18 @@
         padding: 10px;
         font-family: "Montserrat", "Arial", sans-serif;
         font-size: 16px;
+        color: $black;
     }
 
     &__img {
         width: 100%;
         max-width: 320px;
+        transition: all 0.3s ease;
     }
+}
+
+.item__img:hover {
+    box-shadow: 0 5px 12px 6px rgba(244, 169, 192, 0.7);
 }
 
 .item1,
