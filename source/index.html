@@ -190,17 +190,21 @@
                         С заботой к паре и гостям
                     </li>
                 </ul>
-                <div class="benefits__social hidden">
-                    <a href="https://wa.me/79252227768">
-                        <svg class="social-link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
-                            <use xlink:href="img/sprite.svg#whatsapp" href="img/sprite.svg#whatsapp"></use>
-                        </svg>
-                    </a>
-                    <a href="http://t.me/buzenkova_wedding">
-                        <svg class="social-link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
-                            <use xlink:href="img/sprite.svg#telegramm" href="img/sprite.svg#telegramm"></use>
-                        </svg>
-                    </a>
+                <div class="benefits__social">
+                    <div class="benefits__social-content">
+                        <div class="benefits__social-links">
+                            <a href="https://wa.me/79252227768" class="scale">
+                                <svg class="social-link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+                                    <use xlink:href="img/sprite.svg#whatsapp" href="img/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a href="http://t.me/buzenkova_wedding" class="scale">
+                                <svg class="social-link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+                                    <use xlink:href="img/sprite.svg#telegramm" href="img/sprite.svg#telegramm"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="benefits__contact">
@@ -305,6 +309,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <!-- ОТПРАВКА ФОРМЫ -->
+        <section class="calculation pos">
+            <h2 class="visually-hidden">Форма для расчеты свадьбы</h2>
+            <h2 class="calculation__title">сколько будет стоить твоя свадьба?</h2>
+            <div class="calculation__wrapper">
+                <form class="calculation-form" action="#" id="calculation-form">
+                    <input class="calculation-form__input" type="text" name="amount" id="amount" value="" placeholder="Количество человек*" required>
+                    <input class="calculation-form__input" type="text" name="date" id="date" value="" placeholder="Предполагаемая дата*" required>
+                    <input class="calculation-form__input" type="text" name="region" id="region" value="" placeholder="Москва или МО?*" required>
+                    <input class="calculation-form__input" type="text" name="userName" id="userName" value="" placeholder="Твоё имя*" required>
+                    <input class="calculation-form__input" type="text" name="phone" id="phone" value="" placeholder="Напиши свой телефон*" required>
+                    <button class="calculation-form__btn" type="submit">Отправить</button>
+                </form>
             </div>
         </section>
     </main>

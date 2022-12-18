@@ -72,8 +72,8 @@ select {
 select:focus,
 input:focus,
 button:focus {
-    outline: none;
-    border: none;
+    outline: 1px solid $main;
+    border: 1px solid $main;
 }
 
 div {

@@ -30,22 +30,13 @@
     }
 
     &__btn {
-        text-transform: uppercase;
-        font-family: "Montserrat", "Arial", sans-serif;
-        color: $white;
-        font-size: 16px;
-        background-color: $main;
-        border: none;
-        transition: transform 1s;
-        padding: 10px 25px;
-        border-radius: 10px;
-        cursor: pointer;
+        @include btns;
     }
 }
 
-.couples__btn:hover {
-    transform: scale(1.25);
-}
+// .couples__btn:hover {
+//     transform: scale(1.25);
+// }
 
 .item {
     &__title {

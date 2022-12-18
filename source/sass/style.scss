@@ -4,7 +4,6 @@
 @import "mixins";
 @import "partials/timeline";
 @import "partials/header";
-// @import "partials/header-mob";
 @import "partials/burger-menu";
 @import "partials/header-desk";
 @import "partials/intro";
@@ -17,6 +16,7 @@
 @import "partials/couples";
 @import "partials/team";
 @import "partials/price";
+@import "partials/calculation";
 
 html {
     scroll-behavior: smooth;
