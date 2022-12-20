@@ -1,9 +1,9 @@
 .intro {
-    margin-top: -240px;
+    margin-top: -243px;
     padding-top: 197px;
     position: relative;
     background: url("../img/pics/photo/background-intro.jpg") no-repeat;
-    background-size: 120%;
+    background-size: 160%;
     background-position: center;
 
     @media (min-width: 490px) {
@@ -25,10 +25,14 @@
         background-position: 50% 27%;
     }
 
+    &__wrapper {
+        padding-bottom: 80px;
+    }
+
     &__heading {
         @include title-font;
         position: relative;
-        top: 155px;
+        top: 98px;
 
         @media (min-width: 768px) {
             font-size: 20px;
