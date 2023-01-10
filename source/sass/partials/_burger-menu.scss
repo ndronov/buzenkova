@@ -54,6 +54,11 @@
     background-color: transparent;
 }
 
+.nav button:focus {
+    outline: none;
+    border: none;
+}
+
 .nav {
     &__name {
         color: $white;

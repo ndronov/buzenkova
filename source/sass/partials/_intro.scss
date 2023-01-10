@@ -1,6 +1,6 @@
 .intro {
-    margin-top: -243px;
-    padding-top: 197px;
+    margin-top: -130px;
+    padding-top: 110px;
     position: relative;
     background: url("../img/pics/photo/background-intro.jpg") no-repeat;
     background-size: 160%;
@@ -9,6 +9,8 @@
     @media (min-width: 490px) {
         background-size: 130%;
         background-position: 50% -50%;
+        margin-top: -300px;
+        padding-top: 185px;
     }
 
     @media (min-width: 558px) {
@@ -20,13 +22,28 @@
         background-size: 100%;
     }
 
+    @media (min-width: 1024px) {
+        padding-top: 270px;
+    }
+
     @media (min-width: 1440px) {
         background-size: 100%;
         background-position: 50% 27%;
     }
 
     &__wrapper {
-        padding-bottom: 80px;
+        // padding-bottom: 80px;
+        min-height: 550px;
+        max-height: 550px;
+
+        @media (min-width: 768px) {
+            max-height: 520px;
+        }
+
+        @media (min-width: 1024px) {
+            min-height: 870px;
+            max-height: fit-content;
+        }
     }
 
     &__heading {
@@ -34,8 +51,17 @@
         position: relative;
         top: 98px;
 
+        // @media (min-width: 375px) {
+        //     top: 160px;
+        // }
+
         @media (min-width: 768px) {
             font-size: 20px;
+            top: 70px;
+        }
+
+        @media (min-width: 1024px) {
+            top: 10px;
         }
 
         @media (min-width: 1260px) {
@@ -43,7 +69,8 @@
         }
 
         @media (min-width: 1440px) {
-            font-size: 36px;
+            font-size: 46px;
+            padding-bottom: 60px;
         }
     }
 

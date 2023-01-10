@@ -1,5 +1,6 @@
 .ideas {
-    padding-bottom: 120px;
+    padding-bottom: 40px;
+    padding-top: 60px;
 
     @include flex;
 
@@ -15,12 +16,17 @@
         @media (min-width: 960px) {
             flex-direction: row;
             max-width: 1200px;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         @media (min-width: 1200px) {
             align-items: flex-start;
+        }
+
+        @media (min-width: 1440px) {
+            min-width: 1440px;
+            max-width: 1440px;
         }
     }
 
@@ -38,6 +44,10 @@
             font-size: 50px;
             margin-top: 80px;
         }
+
+        @media (min-width: 1440px) {
+            font-size: 58px;
+        }
     }
 }
 
@@ -53,7 +63,8 @@
     rotate: 343deg;
 
     @media (min-width: 960px) {
-        background: url("../img/pics/elements/el1-big.png");
+        background: url("../img/pics/elements/el1-big.png") no-repeat;
+        background-size: cover;
         width: 100px;
         height: 235px;
         top: 275px;
@@ -62,5 +73,11 @@
 
     @media (min-width: 1200px) {
         left: 60px;
+    }
+
+    @media (min-width: 1440px) {
+        left: 35px;
+        width: 140px;
+        height: 330px;
     }
 }

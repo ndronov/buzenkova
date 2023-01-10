@@ -19,10 +19,32 @@
 @mixin title-font {
     font-family: "Dela Gothic One", "Arial", sans-serif;
     line-height: 1.1;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 30px;
+}
+
+@mixin transform-title {
+    @include title-font;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    @media (min-width: 920px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 46px;
+    }
+
+    @media (min-width: 1440px) {
+        position: absolute;
+        rotate: 90deg;
+        left: -185px;
+        top: 40%;
+    }
 }
 
 @mixin btns {

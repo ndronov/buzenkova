@@ -1,6 +1,11 @@
 .ideas__swiper {
     width: 100%;
     max-width: 320px;
+
+    @media (min-width: 1440px) {
+        min-width: 620px;
+        max-width: 620px;
+    }
 }
 
 .swiper-button-back,
@@ -12,20 +17,53 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
+
+    @media (min-width: 490px) {
+        width: 23px;
+        height: 23px;
+    }
 }
 
 .swiper-button-back {
-    border-top: 2px solid $white;
-    border-left: 2px solid $white;
+    border-top: 2px solid $main;
+    border-left: 2px solid $main;
     transform: rotate(-45deg);
     left: 7px;
+
+    @media (min-width: 490px) {
+        left: 60px;
+        border-top: 2px solid $black;
+        border-left: 2px solid $black;
+    }
+
+    @media (min-width: 960px) {
+        display: none;
+    }
 }
 
 .swiper-button-forward {
-    border-top: 2px solid $white;
-    border-right: 2px solid $white;
+    border-top: 2px solid $main;
+    border-right: 2px solid $main;
     transform: rotate(45deg);
     right: 7px;
+
+    @media (min-width: 490px) {
+        right: 60px;
+        border-top: 2px solid $black;
+        border-right: 2px solid $black;
+    }
+
+    @media (min-width: 960px) {
+        right: 20px;
+    }
+
+    @media (min-width: 1440px) {
+        right: 60px;
+        width: 33px;
+        height: 33px;
+        border-top: 4px solid $black;
+        border-right: 4px solid $black;
+    }
 }
 
 .swiper-button-back::after,

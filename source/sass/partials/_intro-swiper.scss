@@ -5,8 +5,12 @@
 }
 
 .video-swiper {
-    height: 40em;
+    height: 30em;
     top: -65px;
+
+    @media (min-width: 1024px) {
+        top: 55px;
+    }
 }
 
 .swiper-button-prev,
@@ -26,15 +30,15 @@
 .swiper-button-prev {
     border-top: 2px solid $black;
     border-left: 2px solid $black;
-    left: 5px;
+    left: 7px;
     transform: rotate(-45deg);
 
-    @media (min-width: 640px) {
-        margin-left: 35px;
+    @media (min-width: 375px) {
+        left: 15px;
     }
 
-    @media (min-width: 1200px) {
-        margin-left: 75px;
+    @media (min-width: 500px) {
+        left: 55px;
     }
 }
 
@@ -42,14 +46,14 @@
     border-top: 2px solid $black;
     border-right: 2px solid $black;
     transform: rotate(45deg);
-    right: 5px;
+    right: 7px;
 
-    @media (min-width: 640px) {
-        margin-right: 35px;
+    @media (min-width: 375px) {
+        right: 15px;
     }
 
-    @media (min-width: 1200px) {
-        margin-right: 75px;
+    @media (min-width: 500px) {
+        right: 55px;
     }
 }
 

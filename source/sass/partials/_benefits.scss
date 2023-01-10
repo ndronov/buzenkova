@@ -1,6 +1,7 @@
 .benefits {
     @include flex;
     flex-direction: column;
+    padding-bottom: 80px;
 
     &__wrapper {
         @include flex;
@@ -23,6 +24,7 @@
 
         @media (min-width: 1440px) {
             padding-bottom: 80px;
+            font-size: 58px;
         }
     }
 
@@ -95,7 +97,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 100px;
     }
 
     &__link {
@@ -115,6 +116,7 @@
 
     &__social-content {
         position: fixed;
+        z-index: 9;
         width: 100%;
         background-color: rgba(244, 169, 192, 0.7);
         top: 286px;
@@ -132,7 +134,7 @@
         height: 100px;
         position: absolute;
         margin: 0 auto;
-        z-index: 99;
+        z-index: 9;
         display: flex;
         justify-content: center;
         right: -100%;
@@ -141,6 +143,17 @@
         &--open {
             right: 0;
             transition: all ease 0.5s;
+        }
+    }
+
+    &__social-close {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        cursor: pointer;
+
+        @media (min-width: 1440px) {
+            right: 40px;
         }
     }
 }

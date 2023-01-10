@@ -6,10 +6,39 @@
 
 .video-slide {
     background: url("../img/pics/elements/review-background.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-width: 768px) {
+        rotate: 90deg;
+    }
+
+    @media (min-width: 1024px) {
+        rotate: none;
+        background: none;
+    }
 }
 
 .video-slide-content {
-    width: 255px;
+    min-width: 187px;
+    max-width: 187px;
     height: fit-content;
+
+    @media (min-width: 768px) {
+        rotate: -90deg;
+        min-width: 405px;
+        max-width: 405px;
+        height: 188px;
+        border-radius: 17px;
+    }
+
+    @media (min-width: 1024px) {
+        rotate: none;
+        min-height: 30em;
+        min-width: 80%;
+    }
+
+    @media (min-width: 1440px) {
+        height: 100%;
+    }
 }

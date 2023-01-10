@@ -9,6 +9,21 @@
         @include title-font;
         font-size: 24px;
     }
+
+    &__wrapper {
+        @media (min-width: 920px) {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: url("../img/pics/elements/el2.png") no-repeat;
+                width: 100px;
+                height: 200px;
+                background-size: cover;
+            }
+        }
+    }
 }
 
 .calculation-form {
@@ -20,6 +35,16 @@
     &__input {
         border: 2px solid $black;
         border-radius: 5px;
+
+        @media (min-width: 920px) {
+            min-width: 350px;
+            max-width: 350px;
+        }
+
+        @media (min-width: 1024px) {
+            min-width: 450px;
+            max-width: 450px;
+        }
     }
 
     &__btn {
