@@ -1,0 +1,175 @@
+.reviews-swiper {
+    overflow: visible;
+    max-width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: 1440px) {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    &__wrapper {
+        @media (min-width: 1440px) {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__slide {
+        background: url("../img/pics/elements/review-background.png") no-repeat;
+        background-size: contain;
+        min-height: 625px;
+        padding: 75px 40px;
+        display: block;
+
+        @media (min-width: 1440px) {
+            min-height: 500px;
+            max-height: 500px;
+        }
+    }
+}
+
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+    background: none;
+}
+
+.reviews-slide {
+    position: relative;
+
+    &__text {
+        @include title-font;
+        font-style: italic;
+        text-transform: lowercase;
+        font-weight: 300;
+        font-size: 13px;
+        text-align: start;
+        max-width: 235px;
+        padding-bottom: 0;
+
+        @media (min-width: 920px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 1440px) {
+            padding-bottom: 0;
+            font-size: 13px;
+        }
+    }
+}
+
+.reviews-slide__more {
+    position: absolute;
+    bottom: 80px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: $main;
+
+    @media (min-width: 1440px) {
+        bottom: 60px;
+    }
+}
+
+.reviews-popup {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.reviews-popup__body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.reviews-popup__content {
+    background-color: $white;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    min-width: 280px;
+    min-height: 100%;
+    position: relative;
+    transition: all 0.8s ease 0s;
+}
+
+.reviews-popup .open {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.reviews-popup-close {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.reviews-popup-close:hover {
+    opacity: 1;
+}
+
+.reviews-popup-close::before,
+.reviews-popup-close::after {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    content: " ";
+    height: 27px;
+    width: 2px;
+    background-color: $black;
+}
+
+.reviews-popup-close::before {
+    transform: rotate(45deg);
+}
+
+.reviews-popup-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-card {
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding-top: 55px;
+    overflow: hidden;
+
+    &__text {
+        font-style: italic;
+    }
+}
+
+.modal-card--open {
+    visibility: visible;
+    opacity: 1;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.modal-card--close {
+    visibility: hidden;
+    opacity: 0;
+    animation: myAnimDown 0.3s ease 0s 1 normal forwards;
+}

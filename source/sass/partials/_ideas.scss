@@ -1,5 +1,5 @@
 .ideas {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     padding-top: 60px;
 
     @include flex;
@@ -34,20 +34,6 @@
         @include title-font;
         font-size: 24px;
         max-width: 590px;
-
-        @media (min-width: 960px) {
-            font-size: 36px;
-            text-align: left;
-        }
-
-        @media (min-width: 1200px) {
-            font-size: 50px;
-            margin-top: 80px;
-        }
-
-        @media (min-width: 1440px) {
-            font-size: 58px;
-        }
     }
 }
 

@@ -7,18 +7,48 @@
         flex-direction: column;
         padding: 0 20px;
         font-family: "Montserrat", "Arial", sans-serif;
+
+        @media (min-width: 1200px) {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: url("../img/pics/elements/rings.png") no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 200px;
+                right: 0;
+                top: -80px;
+
+                @media (min-width: 1440px) {
+                    right: 220px;
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+
+        @media (min-width: 1440px) {
+            padding-top: 245px;
+            padding-bottom: 350px;
+        }
     }
 
     &__title {
         @include transform-title;
         padding-bottom: 30px;
-        top: 50%;
+        top: 280px;
+
+        @media (min-width: 1440px) {
+            top: 350px;
+        }
     }
 }
 
 .accordion-card {
     position: relative;
-    margin-bottom: 1px;
+    margin-bottom: 7px;
     width: 100%;
     color: $white;
     overflow: hidden;

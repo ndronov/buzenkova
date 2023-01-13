@@ -1,0 +1,24 @@
+.reviews {
+    position: relative;
+
+    &__title {
+        @include transform-title;
+
+        @media (min-width: 1440px) {
+            position: absolute;
+            rotate: 270deg;
+            right: 0;
+            left: unset;
+            top: 40%;
+            padding-bottom: 0;
+        }
+    }
+
+    &__wrapper {
+        padding-bottom: 80px;
+    }
+
+    &__content {
+        overflow: hidden;
+    }
+}

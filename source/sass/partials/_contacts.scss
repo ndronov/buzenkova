@@ -1,0 +1,90 @@
+.contacts {
+    &__title {
+        @include title-font;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }
+
+    &__wrapper {
+        @include flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 360px;
+
+        @media (min-width: 700px) {
+            padding-right: 360px;
+            padding-bottom: 50px;
+        }
+
+        @media (min-width: 920px) {
+            padding-right: 445px;
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1440px) {
+            min-width: 1300px;
+            max-width: 1300px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__tel {
+        @include title-font;
+        color: $black;
+
+        @media (min-width: 920px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1440px) {
+            padding-bottom: 20px;
+            font-size: 16px;
+        }
+    }
+
+    &__icon {
+        width: 40px;
+    }
+}
+
+.contacts__wrapper::after {
+    position: absolute;
+    content: "";
+    background: url("../img/pics/elements/cake.png") no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 395px;
+    bottom: 0;
+
+    @media (min-width: 700px) {
+        right: 30px;
+        width: 320px;
+        height: 440px;
+    }
+
+    @media (min-width: 920px) {
+        right: 80px;
+    }
+
+    @media (min-width: 1260px) {
+        bottom: -20px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 450px;
+        height: 610px;
+        bottom: -45px;
+    }
+}

@@ -14,19 +14,6 @@
     &__title {
         @include title-font;
         font-size: 24px;
-
-        @media (min-width: 920px) {
-            font-size: 30px;
-        }
-
-        @media (min-width: 1200px) {
-            font-size: 46px;
-        }
-
-        @media (min-width: 1440px) {
-            padding-bottom: 80px;
-            font-size: 58px;
-        }
     }
 
     &__list {
@@ -41,12 +28,12 @@
         padding-right: 10px;
 
         @media (min-width: 1200px) {
-            padding-bottom: 1225px;
             max-width: 1440px;
             position: relative;
         }
 
         @media (min-width: 1440px) {
+            padding-bottom: 1225px;
             align-items: flex-end;
         }
     }

@@ -8,6 +8,16 @@
     &__title {
         @include title-font;
         font-size: 24px;
+        max-width: 515px;
+
+        @media (min-width: 1200px) {
+            max-width: 780px;
+        }
+
+        @media (min-width: 1440px) {
+            max-width: 980px;
+            padding-bottom: 215px;
+        }
     }
 
     &__wrapper {
@@ -20,7 +30,17 @@
                 background: url("../img/pics/elements/el2.png") no-repeat;
                 width: 100px;
                 height: 200px;
+                top: -60px;
+                left: -130px;
+                rotate: 22deg;
                 background-size: cover;
+
+                @media (min-width: 1440px) {
+                    width: 250px;
+                    height: 450px;
+                    top: -170px;
+                    left: -388px;
+                }
             }
         }
     }
