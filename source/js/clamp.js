@@ -2,7 +2,7 @@ const texts = document.querySelectorAll(".reviews-slide__text");
 
 texts.forEach(item => {
     $clamp(item, {
-        clamp: 25,
+        clamp: 23,
         useNativeClamp: false
     })
 });
