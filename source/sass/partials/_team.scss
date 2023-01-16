@@ -36,11 +36,15 @@
 .team-item {
     max-width: 280px;
 
+    @include flex;
+    flex-direction: column;
+
     &__title {
         font-family: "Dela Gothic One", "Arial", sans-serif;
         line-height: 1.1;
         font-size: 13px;
         text-align: center;
+        padding-bottom: 5px;
 
         @media (min-width: 920px) {
             font-size: 15px;
@@ -49,6 +53,25 @@
         @media (min-width: 1440px) {
             font-size: 18px;
         }
+    }
+
+    &__subtitle {
+        font-family: "Dela Gothic One", "Arial", sans-serif;
+        line-height: 1.1;
+        font-size: 12px;
+        text-align: center;
+
+        @media (min-width: 920px) {
+            font-size: 13px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 15px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 10px;
     }
 }
 
