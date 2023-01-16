@@ -96,3 +96,7 @@
     opacity: 1;
     visibility: visible;
 }
+
+.calculation-form__btn:disabled {
+    background-color: $disabled-color;
+}
