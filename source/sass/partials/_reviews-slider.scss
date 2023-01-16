@@ -28,12 +28,8 @@
     }
 }
 
-.swiper-3d .swiper-slide-shadow-right,
-.swiper-3d .swiper-slide-shadow-left {
-    background: none;
-}
-
 .reviews-slide {
+    background-color: $white;
     position: relative;
 
     @include title-font;
@@ -65,6 +61,11 @@
         text-align: left;
         font-size: 13px;
     }
+}
+
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+    background: none;
 }
 
 .reviews-slide__more {

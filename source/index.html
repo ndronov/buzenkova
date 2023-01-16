@@ -424,13 +424,14 @@
             <h2 class="visually-hidden">Форма для расчеты свадьбы</h2>
             <h2 class="calculation__title">сколько будет стоить твоя свадьба?</h2>
             <div class="calculation__wrapper">
-                <form class="calculation-form" action="#" id="calculation-form">
+                <form class="calculation-form" action="https://api.sheetmonkey.io/form/tRXMXLuXKAQXsrw8vJbvnn" method="post">
                     <input class="calculation-form__input" type="text" name="userName" id="userName" value="" placeholder="Твоё имя*" required>
                     <input class="calculation-form__input" type="text" name="amount" id="amount" value="" placeholder="Количество гостей*" required>
                     <input class="calculation-form__input" type="text" name="date" id="date" value="" placeholder="Предполагаемая дата*" required>
                     <input class="calculation-form__input" type="text" name="region" id="region" value="" placeholder="Город проведения торжества*" required>
                     <input class="calculation-form__input" type="text" name="phone" id="phone" value="" placeholder="Контактный телефон*" required>
-                    <button class="calculation-form__btn" type="submit">Отправить</button>
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    <input class="calculation-form__btn" type="submit" value="Отправить"></input>
                 </form>
             </div>
         </section>
