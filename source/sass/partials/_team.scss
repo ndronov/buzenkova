@@ -15,4 +15,43 @@
     &__content {
         max-width: 320px;
     }
+
+    &__list {
+        @include ul-style;
+        @include flex;
+        flex-direction: column;
+
+        @media (min-width: 920px) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 40px;
+        }
+    }
+}
+
+.team-item {
+    max-width: 280px;
+
+    &__title {
+        font-family: "Dela Gothic One", "Arial", sans-serif;
+        line-height: 1.1;
+        font-size: 13px;
+        text-align: center;
+
+        @media (min-width: 920px) {
+            font-size: 15px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.team-item:not(:last-child) {
+    padding-bottom: 40px;
 }

@@ -57,6 +57,10 @@
     &__icon {
         width: 40px;
     }
+
+    &__text {
+        text-transform: capitalize;
+    }
 }
 
 .contacts__wrapper::after {
