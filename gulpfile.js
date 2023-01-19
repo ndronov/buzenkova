@@ -12,6 +12,8 @@ import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import del from "del";
+import pug from 'gulp-pug';
+import cached from 'gulp-cached';
 
 // Styles
 
@@ -35,6 +37,17 @@ const html = () => {
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 }
+
+// PUG to HTML
+
+const pugToHtml = () => {
+  return gulp.src('source/pug/pages/*.pug')
+      .pipe(plumber())
+      .pipe(pug({ pretty: true }))
+      .pipe(cached('pug'))
+    //   .pipe(htmlmin({ collapseWhitespace: true }))
+      .pipe(gulp.dest('build'));
+};
 
 // Scripts
 
@@ -122,6 +135,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/*.js", gulp.series(scripts, reload));
   gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/pug/pages/*.pug", gulp.series(pugToHtml, reload));
 }
 
 // Build
@@ -132,6 +146,7 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    pugToHtml,
     html,
     scripts,
     svg,
@@ -147,6 +162,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    pugToHtml,
     html,
     scripts,
     svg,
