@@ -8,7 +8,6 @@ import csso from "postcss-csso";
 import rename from "gulp-rename";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
-import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import del from "del";
@@ -42,14 +41,6 @@ const scripts = () => {
   return gulp.src("source/js/*.js")
   .pipe(terser())
   .pipe(gulp.dest("build/js"));
-}
-
-// Images
-
-const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
-  .pipe(squoosh())
-  .pipe(gulp.dest("build/img"));
 }
 
 const copyImages = () => {
@@ -129,7 +120,6 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
-  optimizeImages,
   gulp.parallel(
     styles,
     html,
