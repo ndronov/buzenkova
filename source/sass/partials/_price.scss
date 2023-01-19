@@ -112,14 +112,22 @@
         height: auto;
         transition: all 0.3s ease;
     }
+
+    &__item {
+        max-width: 290px;
+
+        @media (min-width: 1200px) {
+            min-width: auto;
+            max-width: fit-content;
+        }
+    }
 }
 
 .list__img:hover {
     box-shadow: 0 5px 12px 6px rgba(244, 169, 192, 0.7);
 }
 
-.basic__link,
-.planning__link {
+.basic__link {
     @media (min-width: 1200px) {
         display: flex;
         flex-direction: row-reverse;
@@ -169,7 +177,7 @@
     @media (min-width: 1200px) {
         position: absolute;
         left: 170px;
-        top: 550px;
+        top: 625px;
     }
 
     &__link {
@@ -191,7 +199,7 @@
 .planning {
     @media (min-width: 1200px) {
         position: absolute;
-        right: 20px;
+        right: 170px;
         top: 620px;
     }
 
