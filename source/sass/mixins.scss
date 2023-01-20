@@ -63,9 +63,9 @@
 @mixin btns {
     text-transform: uppercase;
     font-family: "Montserrat", "Arial", sans-serif;
-    color: $white;
+    color: $color-default-white;
     font-size: 16px;
-    background-color: $main;
+    background-color: $color-cupid;
     border: none;
     transition: transform 1s;
     padding: 10px 25px;
@@ -76,3 +76,10 @@
         transform: scale(1.25);
     }
 }
+
+@mixin pseudo($width, $height) {
+    position: absolute;
+    content: "";
+    width: $width;
+    height: $height;
+  }

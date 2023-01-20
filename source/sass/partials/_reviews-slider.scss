@@ -29,7 +29,7 @@
 }
 
 .reviews-slide {
-    background-color: $white;
+    background-color: $color-default-white;
     position: relative;
 
     @include title-font;
@@ -77,7 +77,7 @@
     font-size: 13px;
     text-decoration: underline;
     cursor: pointer;
-    color: $main;
+    color: $color-cupid;
 
     @media (min-width: 1440px) {
         bottom: 60px;
@@ -111,8 +111,8 @@
 }
 
 .reviews-popup__content {
-    background-color: $white;
-    color: $black;
+    background-color: $color-default-white;
+    color: $color-default-black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +151,7 @@
     content: " ";
     height: 27px;
     width: 2px;
-    background-color: $black;
+    background-color: $color-default-black;
 }
 
 .reviews-popup-close::before {

@@ -1,0 +1,15 @@
+.portfolio-page__list {
+    @include ul-style();
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 390px;
+    gap: 20px;
+
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 390px;
+        gap: 80px;
+    }
+}

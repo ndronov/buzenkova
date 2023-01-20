@@ -1,80 +1,3 @@
-//- <header class="header">
-//-     <a href="/" data-aos="fade-right">
-//-         <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
-//-             <use xlink:href="img/sprite.svg#logo" href="img/sprite.svg#logo"></use>
-//-         </svg>
-//-     </a>
-//-     <div class="header-mob">
-//-         <div class="burger-menu">
-//-             <nav class="nav">
-//-                 <button class="nav__button" id="nav__button">
-//-                     <span class="toggle-menu" data-aos="fade-left">
-//-                         <span class="line line1"></span>
-//-                         <span class="line line2"></span>
-//-                         <span class="line line3"></span>
-//-                     </span>
-//-                 </button>
-//-                 <div class="nav__overlay">
-//-                     <div class="nav__content">
-//-                         <div>
-//-                             <ul class="nav__list">
-//-                                 <li class="nav__item">
-//-                                     <a href="#team" class="nav__name">О нас</a>
-//-                                 </li>
-//-                                 <li class="nav__item">
-//-                                     <a href="#portfolio" class="nav__name">Портфолио</a>
-//-                                 </li>
-//-                                 <li class="nav__item">
-//-                                     <a href="#price" class="nav__name">Услуги и цены</a>
-//-                                 </li>
-//-                                 <li class="nav__item">
-//-                                     <a href="#faq" class="nav__name">FAQ</a>
-//-                                 </li>
-//-                                 <li class="nav__item">
-//-                                     <a href="#reviews" class="nav__name">Отзывы</a>
-//-                                 </li>
-//-                                 <li class="nav__item">
-//-                                     <a href="#contacts" class="nav__name">Контакты</a>
-//-                                 </li>
-//-                                 <li class="nav__item">
-//-                                     <a href="#calc" class="nav__name">Оставить заявку</a>
-//-                                 </li>
-//-                             </ul>
-//-                         </div>
-//-                     </div>
-//-                 </div>
-//-             </nav>
-//-         </div>
-//-     </div>
-//-     <div class="header-desk">
-//-         <nav class="header-desk__nav">
-//-             <ul class="header-desk__list">
-//-                 <li class="header-desk__item">
-//-                     <a href="#team" class="header-desk__name">О нас</a>
-//-                 </li>
-//-                 <li class="header-desk__item">
-//-                     <a href="#portfolio" class="header-desk__name">Портфолио</a>
-//-                 </li>
-//-                 <li class="header-desk__item">
-//-                     <a href="#price" class="header-desk__name">Услуги и цены</a>
-//-                 </li>
-//-                 <li class="header-desk__item">
-//-                     <a href="#faq" class="header-desk__name">FAQ</a>
-//-                 </li>
-//-                 <li class="header-desk__item">
-//-                     <a href="#reviews" class="header-desk__name">Отзывы</a>
-//-                 </li>
-//-                 <li class="header-desk__item">
-//-                     <a href="#contacts" class="header-desk__name">Контакты</a>
-//-                 </li>
-//-                 <li class="header-desk__item header-desk__item--mod">
-//-                     <a href="#calc" class="header-desk__name header-desk__name--color">Оставить заявку</a>
-//-                 </li>
-//-             </ul>
-//-         </nav>
-//-     </div>
-//- </header>
-
 mixin header()
     header.header
         a(href='#', data-os='fade-right')
@@ -84,10 +7,10 @@ mixin header()
             .burger-menu
                 nav.nav
                     button.nav__button(id="nav__button")
-                        span.toggle-menu(data-aos="fade-left")
-                        span.line.line1
-                        span.line.line2
-                        span.line.line3
+                            span.toggle-menu(data-aos="fade-left")
+                            span.line.line1
+                            span.line.line2
+                            span.line.line3
                     .nav__overlay
                         .nav__content
                             div
@@ -107,19 +30,19 @@ mixin header()
                                     li.nav__item
                                         a.nav__name(href="#calc") Оставить заявку
         .header-desk
-            nav.header__desk__nav
-                ul.header__desk__list
+            nav.header--desk__nav
+                ul.header-desk__list
                     li.header-desk__item
-                        a.header-desk__item(href="#team") О нас
+                        a.header-desk__name(href="#team") О нас
                     li.header-desk__item
-                        a.header-desk__item(href="#portfolio") Портфолио
+                        a.header-desk__name(href="#portfolio") Портфолио
                     li.header-desk__item
-                        a.header-desk__item(href="#price") Услуги и цены
+                        a.header-desk__name(href="#price") Услуги и цены
                     li.header-desk__item
-                        a.header-desk__item(href="#faq") FAQ
+                        a.header-desk__name(href="#faq") FAQ
                     li.header-desk__item
-                        a.header-desk__item(href="#reviews") Отзывы
+                        a.header-desk__name(href="#reviews") Отзывы
                     li.header-desk__item
-                        a.header-desk__item(href="#contacts") Контакты
-                    li.header-desk__item
-                        a.header-desk__item(href="#calc") Оставить заявку
+                        a.header-desk__name(href="#contacts") Контакты
+                    li.header-desk__item.header-desk__item--mod
+                        a.header-desk__name.header-desk__name--color(href="#calc") Оставить заявку

@@ -20,7 +20,7 @@
 
         font-size: 14px;
         font-weight: 500;
-        color: $black;
+        color: $color-default-black;
         position: relative;
 
         @media (min-width: 1200px) {
@@ -34,7 +34,7 @@
 }
 
 .header-desk__name--color {
-    color: $main;
+    color: $color-cupid;
     position: relative;
 
     @media (min-width: 1200px) {
@@ -65,8 +65,8 @@
     opacity: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid $black;
-    box-shadow: 0 -1px 0 0 $black inset;
+    border-bottom: 2px solid $color-default-black;
+    box-shadow: 0 -1px 0 0 $color-default-black inset;
     transition: all 0.3s ease;
 }
 
@@ -83,8 +83,8 @@
     opacity: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid $main;
-    box-shadow: 0 -1px 0 0 $main inset;
+    border-bottom: 2px solid $color-cupid;
+    box-shadow: 0 -1px 0 0 $color-cupid inset;
     transition: all 0.3s ease;
 }
 

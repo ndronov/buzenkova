@@ -28,8 +28,8 @@
 }
 
 .swiper-button-prev {
-    border-top: 2px solid $black;
-    border-left: 2px solid $black;
+    border-top: 2px solid $color-default-black;
+    border-left: 2px solid $color-default-black;
     left: 7px;
     transform: rotate(-45deg);
 
@@ -43,8 +43,8 @@
 }
 
 .swiper-button-next {
-    border-top: 2px solid $black;
-    border-right: 2px solid $black;
+    border-top: 2px solid $color-default-black;
+    border-right: 2px solid $color-default-black;
     transform: rotate(45deg);
     right: 7px;
 
