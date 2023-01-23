@@ -38,7 +38,7 @@
 }
 
 .album__promo--20012022 {
-    background: url('../img/pics/albums/2/cover.jpg') no-repeat ;
+    background: url("../img/pics/albums/2/cover.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -121,15 +121,31 @@
 }
 
 @keyframes jump-after {
-    0%   {transform: translateY(0px) rotate(55deg);}
-    40%  {transform: translateY(5px) rotate(55deg);}
-    100% {transform: translateY(10px) rotate(55deg);}
+    0% {
+        transform: translateY(0) rotate(55deg);
+    }
+
+    40% {
+        transform: translateY(5px) rotate(55deg);
+    }
+
+    100% {
+        transform: translateY(10px) rotate(55deg);
+    }
 }
 
 @keyframes jump-before {
-    0%   {transform: translateY(0px) rotate(-55deg);}
-    40%  {transform: translateY(5px) rotate(-55deg);}
-    100% {transform: translateY(10px) rotate(-55deg);}
+    0% {
+        transform: translateY(0) rotate(-55deg);
+    }
+
+    40% {
+        transform: translateY(5px) rotate(-55deg);
+    }
+
+    100% {
+        transform: translateY(10px) rotate(-55deg);
+    }
 }
 
 .jumping::after {
@@ -137,5 +153,5 @@
 }
 
 .jumping::before {
-animation: jump-before 1s linear alternate infinite;
+    animation: jump-before 1s linear alternate infinite;
 }
