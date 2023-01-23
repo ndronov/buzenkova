@@ -53,7 +53,7 @@
     font-family: "Montserrat", "Arial", sans-serif;
 
     &__input {
-        border: 2px solid $black;
+        border: 2px solid $color-default-black;
         border-radius: 10px;
         min-width: 280px;
         max-width: 280px;
@@ -98,5 +98,5 @@
 }
 
 .calculation-form__btn:disabled {
-    background-color: $disabled-color;
+    background-color: $color-pink-swan;
 }

@@ -50,7 +50,7 @@
     position: relative;
     margin-bottom: 7px;
     width: 100%;
-    color: $white;
+    color: $color-default-white;
     overflow: hidden;
     max-width: 700px;
 
@@ -69,7 +69,7 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 1.35;
-        color: $black;
+        color: $color-default-black;
         position: relative;
         word-break: break-word;
         padding-right: 40px;
@@ -96,7 +96,7 @@
         font-size: 12px;
         font-weight: 300;
         line-height: 1.5;
-        color: $black;
+        color: $color-default-black;
 
         @include flex;
         align-items: flex-start;
@@ -139,12 +139,12 @@
     content: "";
     background-image: url("../img/icons/btn.svg");
     background-repeat: no-repeat;
-    background-color: $white;
+    background-color: $color-default-white;
     background-position: center;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid $black;
+    border: 1px solid $color-default-black;
 }
 
 .accordion-card input[type="checkbox"]:checked + label::after {

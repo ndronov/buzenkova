@@ -25,15 +25,15 @@
 }
 
 .swiper-button-back {
-    border-top: 2px solid $main;
-    border-left: 2px solid $main;
+    border-top: 2px solid $color-cupid;
+    border-left: 2px solid $color-cupid;
     transform: rotate(-45deg);
     left: 7px;
 
     @media (min-width: 490px) {
         left: 60px;
-        border-top: 2px solid $black;
-        border-left: 2px solid $black;
+        border-top: 2px solid $color-default-black;
+        border-left: 2px solid $color-default-black;
     }
 
     @media (min-width: 960px) {
@@ -42,15 +42,15 @@
 }
 
 .swiper-button-forward {
-    border-top: 2px solid $main;
-    border-right: 2px solid $main;
+    border-top: 2px solid $color-cupid;
+    border-right: 2px solid $color-cupid;
     transform: rotate(45deg);
     right: 7px;
 
     @media (min-width: 490px) {
         right: 60px;
-        border-top: 2px solid $black;
-        border-right: 2px solid $black;
+        border-top: 2px solid $color-default-black;
+        border-right: 2px solid $color-default-black;
     }
 
     @media (min-width: 960px) {
@@ -61,8 +61,8 @@
         right: 60px;
         width: 33px;
         height: 33px;
-        border-top: 4px solid $black;
-        border-right: 4px solid $black;
+        border-top: 4px solid $color-default-black;
+        border-right: 4px solid $color-default-black;
     }
 }
 

@@ -1,0 +1,21 @@
+.logo--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo__icon {
+        display: block;
+        width: 180px;
+        height: 180px;
+    }
+
+    .logo__text {
+        text-transform: uppercase;
+        font-family: $ff-secondary;
+        font-size: 18px;
+    }
+
+    @include vp-1024 {
+        flex-direction: row;
+    }
+}

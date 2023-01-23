@@ -1,0 +1,26 @@
+.footer {
+    margin-top: auto;
+    background-color: $color-cupid;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+
+    @media(min-width: 1024px) {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+.footer__link {
+    margin: 0 auto;
+    font-family: $ff-main;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-weight: 700;
+}

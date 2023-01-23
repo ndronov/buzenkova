@@ -63,9 +63,9 @@
 @mixin btns {
     text-transform: uppercase;
     font-family: "Montserrat", "Arial", sans-serif;
-    color: $white;
+    color: $color-default-white;
     font-size: 16px;
-    background-color: $main;
+    background-color: $color-cupid;
     border: none;
     transition: transform 1s;
     padding: 10px 25px;
@@ -75,4 +75,48 @@
     &:hover {
         transform: scale(1.25);
     }
+}
+
+@mixin pseudo($width, $height) {
+    position: absolute;
+    content: "";
+    width: $width;
+    height: $height;
+  }
+
+
+@mixin vp-375 {
+  @media (min-width: $vp-375) {
+    @content;
+  }
+}
+
+@mixin vp-768 {
+  @media (min-width: $vp-768) {
+    @content;
+  }
+}
+
+@mixin vp-1024 {
+  @media (min-width: $vp-1024) {
+    @content;
+  }
+}
+
+@mixin vp-1280 {
+  @media (min-width: $vp-1280) {
+    @content;
+  }
+}
+
+@mixin vp-1440 {
+  @media (min-width: $vp-1440) {
+    @content;
+  }
+}
+
+@mixin vp-1920 {
+  @media (min-width: $vp-1920) {
+    @content;
+  }
 }
