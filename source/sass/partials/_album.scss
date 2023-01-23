@@ -18,6 +18,7 @@
     margin-bottom: 200px;
     padding-top: 300px;
     padding-bottom: 100px;
+    background-position: 50% 50%;
 
     &::after,
     &::before {
@@ -38,7 +39,7 @@
 }
 
 .album__promo--20012022 {
-    background: url("../img/pics/albums/2/cover.JPG") no-repeat;
+    background-image: url("../img/pics/albums/2/cover.JPG");
     background-size: cover;
 }
 
@@ -100,6 +101,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 200px;
     gap: 10px;
+    grid-auto-flow: dense;
 
     @include vp-768 {
         grid-template-columns: repeat(2, 1fr);
@@ -114,10 +116,24 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+    transition: transform $trans-default;
+
+    @include hover {
+        transform: scale(1.05);
+    }
+}
+
+.album__item--hidden {
+    display: none;
 }
 
 .album__button {
     margin: 0 auto;
+
+    &:focus {
+        border: none;
+    }
 }
 
 @keyframes jump-after {
