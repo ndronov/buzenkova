@@ -13,6 +13,8 @@ import svgstore from "gulp-svgstore";
 import del from "del";
 import pug from 'gulp-pug';
 import cached from 'gulp-cached';
+import imagemin from 'gulp-imagemin';
+import webp from 'gulp-webp';
 
 // Styles
 
@@ -48,6 +50,23 @@ const pugToHtml = () => {
       .pipe(gulp.dest('build'));
 };
 
+// Images
+
+const createWebp = () => {
+    return gulp.src(`source/img/pics/albums/**/*.{png,jpg,JPG}`)
+      .pipe(webp({quality: 80}))
+      .pipe(gulp.dest(`build/img/pics/albums`));
+};
+
+const optimizeImages = () => {
+    return gulp.src(`source/img/pics/albums/**/*.{png,jpg,JPG}`)
+        .pipe(imagemin([
+            imagemin.optipng({optimizationLevel: 3}),
+            imagemin.mozjpeg({quality: 15, progressive: true}),
+        ]))
+        .pipe(gulp.dest('build/img/pics/albums'));
+};
+
 // Scripts
 
 const scripts = () => {
@@ -57,7 +76,7 @@ const scripts = () => {
 }
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg,JPG,jpeg,webp}")
   .pipe(gulp.dest("build/img"));
 }
 
@@ -85,7 +104,6 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/**/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**"
   ], {
     base: "source"
     })
@@ -134,6 +152,8 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+//   optimizeImages,
+  copyImages,
   gulp.parallel(
     styles,
     pugToHtml,
@@ -150,6 +170,8 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+//   optimizeImages,
+    // createWebp,
   gulp.parallel(
     styles,
     pugToHtml,

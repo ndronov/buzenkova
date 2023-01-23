@@ -2,17 +2,8 @@ extends ../base/layout
 
 block variables
   - var title = "Портфолио"
+  - var currentPage = 'portfolio'
+  - var innerPage = true
 
 block main
-    .container.portfolio-page
-        ul.portfolio-page__list
-            each item in CLASSIC_COVERS
-                li.portfolio-page__item
-                    div.cover-card
-                        div.cover-card__text
-                            p #{item.date}
-                            h2.cover-card__heading
-                                | Свадьба
-                                br
-                                | #{item.title}
-                        img.cover-card__image(src=item.coverSrc, alt=item.coverText, width='200', height='200')
+    +portfolio(CLASSIC_COVERS)

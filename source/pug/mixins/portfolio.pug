@@ -1,0 +1,14 @@
+mixin portfolio(data)
+     section.container.portfolio-page
+        ul.portfolio-page__list
+            each item in data
+                li.portfolio-page__item
+                    div.cover-card
+                        a.cover-card__link(href=item.src)
+                            div.cover-card__text
+                                p #{item.date}
+                                h2.cover-card__heading
+                                    | Свадьба
+                                    br
+                                    | #{item.title}
+                            +picture('cover-card__image', item.coverSrc, 200, 200, item.coverText)

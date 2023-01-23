@@ -1,0 +1,26 @@
+mixin album(album, albumNumber, albumMod, photoAmount)
+    main.album
+        section(class='album__promo '+ 'album__promo--' + albumMod + ' jumping')
+            .container.album__promo-container
+                h1.album__heading
+                    | Свадьба
+                    br
+                    | #{album.title}
+                p.album__subheading #{album.location}
+                p.album__subheading #{album.date}
+        section.album__description
+            .container.album__description--container
+                each text in album.description
+                    p.album__text.basic__title #{text}
+        section.album__video
+            .container
+                .album__video-container
+                    p.a Видео
+        section.album__photos
+            .container.album__photos--container
+                ul.album__list
+                    - var n = 1;
+                    while n < photoAmount
+                        li.album__item
+                            +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
+                button.calculation-form__btn.album__button Показать еще

@@ -1,0 +1,4 @@
+mixin picture(className, path, width, height, altText)
+  picture(class=className)
+    source(type='image/webp', srcset=path + ".webp")
+    img(class=className, src=path + '.jpg', width= width, height= height, alt= altText, loading='lazy')

@@ -39,3 +39,14 @@
         }
     }
 }
+
+.header--inner {
+    .header-desk__name {
+        color: $color-default-white;
+    }
+}
+
+.header .header-desk__name--active::after {
+    opacity: 1;
+    bottom: -2px;
+}

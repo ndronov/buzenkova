@@ -1,13 +1,13 @@
-mixin header()
-    header.header
-        a(href='#', data-os='fade-right')
+mixin header(currentPage, isInnerPage)
+    header(class=isInnerPage ? 'header header--inner' : 'header')
+        a(href='index.html', data-os='fade-right')
             svg.header__logo(xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", viewBox="0 0 1000 1000")
                 use(xlink:href="img/sprite.svg#logo", href="img/sprite.svg#logo")
         .header-mob
             .burger-menu
                 nav.nav
                     button.nav__button(id="nav__button")
-                            span.toggle-menu(data-aos="fade-left")
+                        span.toggle-menu(data-aos="fade-left")
                             span.line.line1
                             span.line.line2
                             span.line.line3
@@ -16,32 +16,32 @@ mixin header()
                             div
                                 ul.nav__list
                                     li.nav__item
-                                        a.nav__name(href="#team") О нас
+                                        a.nav__name(href="index.html#team") О нас
                                     li.nav__item
-                                        a.nav__name(href="#portfolio") Портфолио
+                                        a.nav__name(href="index.html#portfolio") Портфолио
                                     li.nav__item
-                                        a.nav__name(href="#price") Услуги и цены
+                                        a.nav__name(href="index.html#price") Услуги и цены
                                     li.nav__item
-                                        a.nav__name(href="#faq") FAQ
+                                        a.nav__name(href="index.html#faq") FAQ
                                     li.nav__item
-                                        a.nav__name(href="#reviews") Отзывы
+                                        a.nav__name(href="index.html#reviews") Отзывы
                                     li.nav__item
-                                        a.nav__name(href="#contacts") Контакты
+                                        a.nav__name(href="index.html#contacts") Контакты
                                     li.nav__item
-                                        a.nav__name(href="#calc") Оставить заявку
+                                        a.nav__name(href="index.html#calc") Оставить заявку
         .header-desk
             nav.header--desk__nav
                 ul.header-desk__list
                     li.header-desk__item
-                        a.header-desk__name(href="#team") О нас
+                        a.header-desk__name(href="index.html#team") О нас
                     li.header-desk__item
-                        a.header-desk__name(href="#portfolio") Портфолио
+                        a(href='index.html#portfolio', class='header-desk__name') Портфолио
                     li.header-desk__item
-                        a.header-desk__name(href="#price") Услуги и цены
+                        a.header-desk__name(href="index.html#price") Услуги и цены
                     li.header-desk__item
-                        a.header-desk__name(href="#faq") FAQ
+                        a.header-desk__name(href="index.html#faq") FAQ
                     li.header-desk__item
-                        a.header-desk__name(href="#reviews") Отзывы
+                        a.header-desk__name(href="index.html#reviews") Отзывы
                     li.header-desk__item
                         a.header-desk__name(href="#contacts") Контакты
                     li.header-desk__item.header-desk__item--mod

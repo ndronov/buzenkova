@@ -24,6 +24,11 @@
     }
 }
 
+.cover-card__link {
+    display: flex;
+    width: 100%;
+}
+
 .cover-card__image {
     position: absolute;
     top: 0;

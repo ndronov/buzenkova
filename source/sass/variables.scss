@@ -4,7 +4,9 @@
 // Default
 
 $color-default-black:               #000000;
+$black:                             #000000;
 $color-default-white:               #ffffff;
+$white:                             #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
@@ -12,9 +14,10 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-cupid:                       #f4a9c0;
 $color-pink-swan:                   #b8abab;
+$color-ferra:                       #876e6e;
 
 // Gradient
-$color-default-black-to-right:        linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-default-black-to-right:       linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------

@@ -25,9 +25,18 @@
 @import "partials/contacts";
 @import "partials/portfolio-page";
 @import "partials/cover-card";
+@import 'partials/footer';
+@import 'partials/logo';
+@import 'partials/social-list';
+@import 'partials/album';
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .hidden {
