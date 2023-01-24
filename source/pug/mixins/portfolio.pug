@@ -1,4 +1,4 @@
-mixin portfolio(data)
+mixin portfolio(data, isEventAlbum)
      section.container.portfolio-page
         ul.portfolio-page__list
             each item in data
@@ -7,8 +7,11 @@ mixin portfolio(data)
                         a.cover-card__link(href=item.src)
                             div.cover-card__text
                                 p #{item.date}
-                                h2.cover-card__heading
-                                    | Свадьба
-                                    br
-                                    | #{item.title}
+                                if !isEventAlbum
+                                    h2.cover-card__heading
+                                        | Свадьба
+                                        br
+                                        | #{item.title}
+                                else
+                                    h2.cover-card__heading #{item.title}
                             +picture('cover-card__image', item.coverSrc, 200, 200, item.coverText)

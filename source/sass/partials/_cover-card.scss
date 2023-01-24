@@ -12,7 +12,7 @@
         transition: transform $trans-default;
     }
 
-    &:hover {
+    @include hover {
         cursor: pointer;
 
         &::after {

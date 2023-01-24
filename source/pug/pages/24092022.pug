@@ -4,11 +4,11 @@ block variables
   - var title = "Портфолио"
   - var currentPage = 'portfolio'
   - var isInnerPage = true
-  - var albumDate = '04.06.2022'
+  - var albumDate = '24.09.2022'
   - var albumsArray = CLASSIC_COVERS
   - var album = albumsArray .find((el) => el.date === albumDate)
   - var albumNumber = album.coverSrc.replace(/\D+/g, '')
   - var albumMod = albumDate.replaceAll('.', '')
 
 block main
-    +album(album, albumNumber, albumMod, 73)
+    +album(album, albumNumber, albumMod, 28)

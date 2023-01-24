@@ -19,6 +19,7 @@
     padding-top: 300px;
     padding-bottom: 100px;
     background-position: 50% 50%;
+    background-size: cover;
 
     &::after,
     &::before {
@@ -36,11 +37,74 @@
         transform: rotate(-55deg);
         left: calc(50% - 2px);
     }
-}
 
-.album__promo--20012022 {
-    background-image: url("../img/pics/albums/2/cover.JPG");
-    background-size: cover;
+    &--20012022 {
+        background-image: url("../img/pics/albums/2/cover.JPG");
+    }
+
+    &--04062022 {
+        background-image: url("../img/pics/albums/3/cover.jpg");
+    }
+
+    &--17092022 {
+        background-image: url("../img/pics/albums/5/cover.jpg");
+    }
+
+    &--20082022 {
+        background-image: url("../img/pics/albums/8/cover.jpg");
+    }
+
+    &--23062022 {
+        background-image: url("../img/pics/albums/9/cover.jpg");
+    }
+
+    &--08082022 {
+        background-image: url("../img/pics/albums/12/cover.jpg");
+    }
+
+    &--24092022 {
+        background-image: url("../img/pics/albums/14/cover.jpg");
+    }
+
+    &--27072022 {
+        background-image: url("../img/pics/albums/15/cover.jpg");
+    }
+
+    &--13092022 {
+        background-image: url("../img/pics/albums/16/cover.jpg");
+    }
+
+    &--11062022 {
+        background-image: url("../img/pics/albums/17/cover.jpg");
+    }
+
+    &--16072022 {
+        background-image: url("../img/pics/albums/6/cover.jpg");
+    }
+
+    &--01102022 {
+        background-image: url("../img/pics/albums/1/cover.jpg");
+    }
+
+    &--03092022 {
+        background-image: url("../img/pics/albums/4/cover.jpg");
+    }
+
+    &--06012022 {
+        background-image: url("../img/pics/albums/7/cover.jpg");
+    }
+
+    &--28042022 {
+        background-image: url("../img/pics/albums/10/cover.jpg");
+    }
+
+    &--11112022 {
+        background-image: url("../img/pics/albums/13/cover.jpg");
+    }
+
+    &--07122022 {
+        background-image: url("../img/pics/albums/11/cover.jpg");
+    }
 }
 
 .album__heading {
@@ -99,7 +163,7 @@
     padding: 0;
     list-style-type: none;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: auto;
     gap: 10px;
     grid-auto-flow: dense;
 
@@ -109,6 +173,7 @@
 
     @include vp-1280 {
         grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 200px;
     }
 }
 
@@ -126,6 +191,25 @@
 
 .album__item--hidden {
     display: none;
+}
+
+.album__item--gr {
+    @include vp-768 {
+        grid-row: span 2;
+    }
+}
+
+.album__item--gc {
+    @include vp-768 {
+        grid-column: span 2;
+    }
+}
+
+.album__item--grac {
+    @include vp-768 {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
 }
 
 .album__button {

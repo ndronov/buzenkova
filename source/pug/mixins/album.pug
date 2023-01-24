@@ -1,11 +1,15 @@
-mixin album(album, albumNumber, albumMod, photoAmount)
+mixin album(album, albumNumber, albumMod, photoAmount, isEventAlbum)
+    - isEventAlbum = isEventAlbum || false
     main.album
         section(class='album__promo '+ 'album__promo--' + albumMod + ' jumping')
             .container.album__promo-container
-                h1.album__heading
-                    | Свадьба
-                    br
-                    | #{album.title}
+                if !isEventAlbum
+                    h1.album__heading
+                        | Свадьба
+                        br
+                        | #{album.title}
+                else
+                    h1.album__heading #{album.title}
                 p.album__subheading #{album.location}
                 p.album__subheading #{album.date}
         section.album__description
@@ -26,35 +30,35 @@ mixin album(album, albumNumber, albumMod, photoAmount)
             .container.album__photos--container
                 ul.album__list
                     - var n = 1;
-                    while n < photoAmount
+                    while n <= photoAmount
                         if n > 40 && n % 4 === 0
-                            li.album__item.album__item--hidden(style='grid-row: span 2')
+                            li.album__item.album__item--hidden.album__item--gr
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n > 40 && n % 3 === 0
-                            li.album__item.album__item--hidden(style='grid-column: span 2')
+                            li.album__item.album__item--hidden.album__item--gc
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n > 40 && n % 4 === 0
-                            li.album__item.album__item--hidden(style='grid-row: span 2')
+                            li.album__item.album__item--hidden.album__item--gr
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n > 40 && n % 7 === 0
-                            li.album__item.album__item--hidden(style='grid-column: span 2; grid-row: span 3')
+                            li.album__item.album__item--hidden.album__item--gcar
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n > 40
                             li.album__item.album__item--hidden
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n % 4 === 0
-                            li.album__item(style='grid-row: span 2')
+                            li.album__item.album__item--gr
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n % 3 === 0
-                            li.album__item(style='grid-column: span 2')
+                            li.album__item.album__item--gc
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else if n % 7 === 0
-                            li.album__item(style='grid-column: span 2; grid-row: span 3')
+                            li.album__item.album__item--gcar
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                         else
                             li.album__item
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                 button.album__button.calculation-form__btn Загрузить еще
-        dialog.dialog
-            .dialog__content
+        dialog.dialog.swiper
+            .dialog__content.gallery
 
