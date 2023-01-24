@@ -18,7 +18,7 @@
     <title>Портфолио</title>
   </head>
   <body>
-    <header class="header"><a href="index.html" data-os="fade-right">
+    <header class="header header--inner"><a href="index.html" data-os="fade-right">
         <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
           <use xlink:href="img/sprite.svg#logo" href="img/sprite.svg#logo"></use>
         </svg></a>
@@ -58,20 +58,72 @@
         </nav>
       </div>
     </header>
-    <section class="container portfolio-page">
-      <ul class="portfolio-page__list">
-        <li class="portfolio-page__item">
-          <div class="cover-card"><a class="cover-card__link" href="07122022.html">
-              <div class="cover-card__text">
-                <p>07.12.2022</p>
-                <h2 class="cover-card__heading">ЕБ@ТЬ 35</h2>
-              </div>
-              <picture class="cover-card__image">
-                <source type="image/webp" srcset="img/pics/albums/11/cover.webp"><img class="cover-card__image" src="img/pics/albums/11/cover.jpg" width="200" height="200" alt="ЕБ@ТЬ 35" loading="lazy">
-              </picture></a></div>
-        </li>
-      </ul>
-    </section>
+    <main class="album">
+      <section class="album__promo album__promo--13092022 jumping">
+        <div class="container album__promo-container">
+          <h1 class="album__heading">Свадьба<br>Сергея и Тани</h1>
+          <p class="album__subheading">Ереван, Армения</p>
+          <p class="album__subheading">13.09.2022</p>
+        </div>
+      </section>
+      <section class="album__description">
+        <div class="container album__description--container">
+          <p class="album__text basic__title">тест3</p>
+          <p class="album__text basic__title">тест4</p>
+          <p class="album__text basic__title">тест5</p>
+        </div>
+      </section>
+      <section class="album__video">
+        <div class="container">
+          <div class="about__video video"><a class="video__link" href="https://www.youtube.com/watch?v=XIZrbyMp-dw">
+              <div class="video__overlay"></div>
+              <picture>
+                <source srcset="https://i.ytimg.com/vi_webp/XIZrbyMp-dw/maxresdefault.webp" type="image/webp"><img class="about__image video__image" src="https://i.ytimg.com/vi/XIZrbyMp-dw/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+              </picture>
+              <button class="video__button" type="button"><span class="visually-hidden">Воспроизвести видео</span></button></a></div>
+        </div>
+      </section>
+      <section class="album__photos">
+        <div class="container album__photos--container">
+          <ul class="album__list">
+            <li class="album__item">
+              <picture class="album__image">
+                <source type="image/webp" srcset="img/pics/albums/16/1.webp"><img class="album__image" src="img/pics/albums/16/1.jpg" width="100" height="100" alt="тест" loading="lazy">
+              </picture>
+            </li>
+            <li class="album__item">
+              <picture class="album__image">
+                <source type="image/webp" srcset="img/pics/albums/16/2.webp"><img class="album__image" src="img/pics/albums/16/2.jpg" width="100" height="100" alt="тест" loading="lazy">
+              </picture>
+            </li>
+            <li class="album__item album__item--gc">
+              <picture class="album__image">
+                <source type="image/webp" srcset="img/pics/albums/16/3.webp"><img class="album__image" src="img/pics/albums/16/3.jpg" width="100" height="100" alt="тест" loading="lazy">
+              </picture>
+            </li>
+            <li class="album__item album__item--gr">
+              <picture class="album__image">
+                <source type="image/webp" srcset="img/pics/albums/16/4.webp"><img class="album__image" src="img/pics/albums/16/4.jpg" width="100" height="100" alt="тест" loading="lazy">
+              </picture>
+            </li>
+            <li class="album__item">
+              <picture class="album__image">
+                <source type="image/webp" srcset="img/pics/albums/16/5.webp"><img class="album__image" src="img/pics/albums/16/5.jpg" width="100" height="100" alt="тест" loading="lazy">
+              </picture>
+            </li>
+            <li class="album__item album__item--gc">
+              <picture class="album__image">
+                <source type="image/webp" srcset="img/pics/albums/16/6.webp"><img class="album__image" src="img/pics/albums/16/6.jpg" width="100" height="100" alt="тест" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <button class="album__button calculation-form__btn">Загрузить еще</button>
+        </div>
+      </section>
+      <dialog class="dialog swiper">
+        <div class="dialog__content gallery"></div>
+      </dialog>
+    </main>
     <footer class="footer">
       <div class="container footer__container">
         <div class="logo logo--footer"><a href="index.html" data-os="fade-right">
