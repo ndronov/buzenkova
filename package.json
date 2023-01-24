@@ -43,6 +43,7 @@
   "license": "ISC",
   "dependencies": {
     "flatmap": "^0.0.3",
-    "gulp-newer": "^1.4.0"
+    "gulp-newer": "^1.4.0",
+    "swiper": "^8.4.6"
   }
 }

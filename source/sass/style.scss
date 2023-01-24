@@ -30,7 +30,9 @@
 @import "partials/social-list";
 @import "partials/album";
 @import "partials/video";
-@import "partials/dialog";
+@import "swiper.scss";
+// @import "partials/dialog";
+// @import "partials/gallery";
 
 html {
     scroll-behavior: smooth;
@@ -64,7 +66,16 @@ body {
     height: 50px;
 }
 
-
 .scroll-lock {
     overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 320px;
+    max-height: 100vh;
+
+    @include vp-768 {
+        max-width: 800px;
+    }
 }

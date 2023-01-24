@@ -23,36 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     setupButton();
     setupModal();
 
-    // const photos = document.querySelectorAll('.album__item');
-    // const dialog = document.querySelector('.dialog');
-    // const dialogContent = document.querySelector('.dialog__content');
-
-    // photos.forEach(el => {
-    //     el.addEventListener('click', (e) => {
-    //         const image = e.currentTarget.querySelectorAll('.album__image')[1];
-    //         const element = `
-    //         <picture class='dialog__image' >
-    //             <source type="image/webp" srcset=${image.src.replace('.jpg', '.webp')}>
-    //             <img class='dialog__image' src=${image.src} width="200" height="auto" alt=${image.alt} loading="lazy">
-    //         </picture>
-    //         <button class='dialog__button' type='button'>
-    //             <span class="visually-hidden">Закрыть</span>
-    //         </button>
-    //         `
-    //         dialogContent.innerHTML = element;
-    //         dialog.showModal()
-    //         dialog.addEventListener('click', (event) => {
-    //             let rect = dialog.getBoundingClientRect();
-    //             const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
-    //             && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
-    //             if (!isInDialog) {
-    //                 dialog.close();
-    //             }
-    //         })
-
-    //     })
-    // })
-
     // Modules
     // ---------------------------------
 
