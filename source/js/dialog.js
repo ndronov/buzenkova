@@ -56,6 +56,7 @@ const onPhotoClick = (e) => {
         const initialSlide = e.target.src.split('/')[7].replace('.jpg', '') - 1;
         const albumNumber = e.target.src.split('/')[6];
         const photosCount = PHOTOS_IN_ALBUMS[albumNumber];
+        console.log(initialSlide, albumNumber, photosCount)
         const dialogInnerContent = `
             <div class="swiper gallery__photos">
                 <div class="swiper-wrapper">
