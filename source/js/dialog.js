@@ -55,8 +55,8 @@ const onPhotoClick = (e) => {
         document.body.classList.add('scroll-lock')
         const initialSlide = e.target.src.split('/')[7].replace('.jpg', '') - 1;
         const albumNumber = e.target.src.split('/')[6];
+        console.log(e.target.src.split)
         const photosCount = PHOTOS_IN_ALBUMS[albumNumber];
-        console.log(initialSlide, albumNumber, photosCount)
         const dialogInnerContent = `
             <div class="swiper gallery__photos">
                 <div class="swiper-wrapper">
