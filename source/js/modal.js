@@ -1,33 +1,38 @@
-const popup = document.querySelector('.reviews-popup');
-const close = document.querySelector('.reviews-popup-close');
+const popup = document.querySelector('.modal');
+const close = document.querySelector('.modal__close-button');
+const popupContent = document.querySelector('.modal__text')
 const reviewsParent = document.querySelector(".reviews-swiper__wrapper");
 
 if (popup) {
     reviewsParent.addEventListener("click", (e) => {
         const el = e.target;
-    
+
         if(el.classList.contains("reviews-slide__more")) {
-            const reviewContent = document.querySelector(".modal-card__text");
             const content = el.closest(".reviews-slide").querySelector('.reviews-slide__text').textContent;
-            reviewContent.textContent = content;
+            popupContent.textContent = content;
             showReview();
         }
     })
-    
-    close.addEventListener("click", closeReview);
-    
+
     function showReview() {
-        popup.classList.remove("hidden");
-        popup.classList.add("modal-card--open");
-    
-        if(popup.classList.contains("modal-card--close")) {
-            popup.classList.remove('modal-card--close');
-        };
+        popup.classList.add('modal--open');
+        popup.addEventListener('click', onOutsideModalClick);
+        close.addEventListener('click', closeReview);
+        document.body.classList.add('scroll-lock');
+        popup.classList.add('scroll-lock-ios');
     }
-    
+
     function closeReview() {
-        popup.classList.remove("modal-card--open");
-        popup.classList.add('modal-card--close');
+        document.body.classList.remove('scroll-lock');
+        popup.classList.remove('scroll-lock-ios');
+        popup.classList.remove('modal--open')
+        close.removeEventListener('click', closeReview);
+    }
+
+    function onOutsideModalClick(e) {
+        if (!e.target.classList.contains('nodal--open')) {
+            closeReview();
+        }
     }
 }
 
