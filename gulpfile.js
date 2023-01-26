@@ -170,7 +170,7 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
-//   optimizeImages,
+  // optimizeImages,
     // createWebp,
   gulp.parallel(
     styles,
