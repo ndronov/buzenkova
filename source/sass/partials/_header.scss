@@ -43,6 +43,11 @@
 .header--inner {
     .header-desk__name {
         color: $color-default-white;
+
+        &::after {
+            border-color: $white;
+            box-shadow: 0 -1px 0 0 $white inset;
+        }
     }
 }
 
@@ -53,4 +58,9 @@
 
 .header .header-desk__name--color {
     color: $color-cupid;
+
+    &::after {
+        border-color: $color-cupid;
+        box-shadow: 0 -1px 0 0 $color-cupid inset;
+    }
 }

@@ -1,5 +1,7 @@
 window.addEventListener("load", function() {
+  if(this.document.querySelector(".calculation-form")) {
     const form = document.querySelector(".calculation-form");
+    console.log(form);
     const buttonForm = form.querySelector(".calculation-form__btn");
     form.addEventListener("submit", function(e) {
       e.preventDefault();
@@ -15,4 +17,5 @@ window.addEventListener("load", function() {
         buttonForm.disabled = false;
       })
     });
-  });
+  }
+});

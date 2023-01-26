@@ -2,7 +2,7 @@ if(document.querySelector(".reviews-swiper")) {
     new Swiper(".reviews-swiper", {
         effect: 'coverflow',
         grabCursor: true,
-        initialSlide: 2,
+        initialSlide: 4,
         centeredSlides: true,
         loop: false,
         slidesPerView: 'auto',

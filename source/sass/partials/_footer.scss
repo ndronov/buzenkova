@@ -23,4 +23,12 @@
     text-transform: uppercase;
     color: inherit;
     font-weight: 700;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    @media (min-width: 1440px) {
+        &:hover {
+            color: $white;
+        }
+    }
 }

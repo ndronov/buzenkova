@@ -1,0 +1,180 @@
+.price-page {
+    @include nav-font;
+    font-size: 14px;
+
+    &__intro {
+        background: url("../img/pics/price/5.jpg") no-repeat;
+        padding-top: 150px;
+        margin-top: -150px;
+        background-size: cover;
+
+        @media (min-width: 768px) {
+            padding-bottom: 50px;
+            margin-bottom: 70px;
+        }
+
+        @media (min-width: 1260px) {
+            padding-bottom: 160px;
+            margin-bottom: 70px;
+            padding-top: 280px;
+            margin-top: -200px;
+        }
+
+        @media (min-width: 1640px) {
+            padding-top: 255px;
+            margin-top: -250px;
+            padding-bottom: 280px;
+        }
+    }
+
+    &__title {
+        @include title-font;
+        color: $white;
+        font-size: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+
+        @media (min-width: 620px) {
+            font-size: 19px;
+            padding-bottom: 70px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 35px;
+        }
+
+        @media (min-width: 1260px) {
+            font-size: 45px;
+            padding-top: 100px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 50px;
+        }
+    }
+
+    &__wrapper {
+        padding: 20px 20px 70px;
+
+        @include flex;
+        flex-direction: column;
+
+        @media (min-width: 700px) {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                z-index: -1;
+                background: url("../img/pics/elements/dress.png") no-repeat;
+                width: 360px;
+                height: 570px;
+                left: -160px;
+                top: 320px;
+                background-size: cover;
+
+                @media (min-width: 1240px) {
+                    width: 520px;
+                    height: 715px;
+                    left: -190px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: url("../img/pics/elements/cake1.png") no-repeat;
+                width: 190px;
+                height: 200px;
+                right: 0;
+                bottom: 0;
+                background-size: cover;
+
+                @media (min-width: 1240px) {
+                    width: 350px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    &__content {
+        max-width: 600px;
+
+        @media (min-width: 700px) {
+            padding-bottom: 200px;
+        }
+    }
+
+    &__heading {
+        @include title-font;
+        font-size: 16px;
+        padding-bottom: 15px;
+
+        @media (min-width: 920px) {
+            font-size: 19px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 35px;
+        }
+    }
+
+    &__price {
+        font-size: 17px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    &__desc {
+        padding-bottom: 40px;
+
+        @media (min-width: 700px) {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background: url("../img/pics/elements/pies.png") no-repeat;
+                width: 170px;
+                height: 170px;
+                right: -35px;
+                top: -150px;
+                background-size: cover;
+
+                @media (min-width: 1240px) {
+                    width: 200px;
+                    height: 195px;
+                    right: -85px;
+                }
+            }
+        }
+    }
+
+    &__block-title {
+        @include title-font;
+        padding-bottom: 20px;
+
+        @media (min-width: 920px) {
+            font-size: 16px;
+        }
+    }
+
+    &__list {
+        padding-left: 10px;
+        margin: 0;
+        list-style-type: disc;
+    }
+}
+
+.price-page__text:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.price-page__block:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.price-page__title--width {
+    max-width: 1130px;
+}

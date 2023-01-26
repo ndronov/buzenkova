@@ -47,10 +47,10 @@
     }
 
     .swiper-slide {
-        opacity: 0.6;
+        filter: brightness(0.5);
     }
 
     .swiper-slide-thumb-active {
-        opacity: 1;
+        filter: none;
     }
 }

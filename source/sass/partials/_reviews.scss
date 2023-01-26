@@ -9,13 +9,18 @@
             rotate: 270deg;
             right: 0;
             left: unset;
-            top: 40%;
+            top: 37%;
             padding-bottom: 0;
         }
     }
 
     &__wrapper {
         padding-bottom: 80px;
+        margin: 0 auto;
+
+        @media (min-width: 1440px) {
+            max-width: 1030px;
+        }
     }
 
     &__content {

@@ -34,6 +34,12 @@ li {
     word-break: break-word;
 }
 
+h2,
+p {
+    word-break: break-word;
+    cursor: default;
+}
+
 details > summary {
     list-style: none;
 }

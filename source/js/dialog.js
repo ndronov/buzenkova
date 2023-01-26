@@ -53,8 +53,12 @@ const createSlides = (albumNumber, photosCount) => {
 const onPhotoClick = (e) => {
     if (e.target.closest('.album__item')) {
         document.body.classList.add('scroll-lock')
-        const initialSlide = e.target.src.split('/')[8].replace('.jpg', '') - 1;
-        const albumNumber = e.target.src.split('/')[7];
+        // const initialSlide = e.target.src.split('/')[7].replace('.jpg', '') - 1;
+        // const albumNumber = e.target.src.split('/')[6];
+        let albumNumberRegexp = /albums\/(\d+)/i;
+        let photoNumberRegexp = /(\d+)(?:.jpg)/i;
+        const initialSlide = e.target.src.match(photoNumberRegexp)[1] - 1;
+        const albumNumber = e.target.src.match(albumNumberRegexp)[1];
         const photosCount = PHOTOS_IN_ALBUMS[albumNumber];
         const dialogInnerContent = `
             <div class="swiper gallery__photos">

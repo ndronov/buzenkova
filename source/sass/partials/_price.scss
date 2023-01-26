@@ -15,7 +15,7 @@
         }
 
         @media (min-width: 1200px) {
-            padding-bottom: 1375px;
+            padding-bottom: 1500px;
         }
     }
 
@@ -61,8 +61,8 @@
         }
 
         @media (min-width: 1200px) {
-            min-width: 1200px;
-            max-width: 1200px;
+            min-width: 980px;
+            max-width: 980px;
             position: relative;
             font-size: 20px;
             margin-left: 20px;
@@ -176,7 +176,7 @@
 .coordination {
     @media (min-width: 1200px) {
         position: absolute;
-        left: 170px;
+        left: 0;
         top: 625px;
     }
 
@@ -199,7 +199,7 @@
 .planning {
     @media (min-width: 1200px) {
         position: absolute;
-        right: 170px;
+        right: 0;
         top: 620px;
     }
 

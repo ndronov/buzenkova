@@ -4,6 +4,12 @@
     @include vp-1440 {
         margin: 0 auto;
     }
+
+    &__item {
+        @include vp-1440 {
+            cursor: pointer;
+        }
+    }
 }
 
 .portfolio-page__list {
