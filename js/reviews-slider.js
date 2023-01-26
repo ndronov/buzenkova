@@ -1,1 +1,1 @@
-document.querySelector(".reviews-swiper")&&new Swiper(".reviews-swiper",{effect:"coverflow",grabCursor:!0,initialSlide:2,centeredSlides:!0,loop:!1,slidesPerView:"auto",coverflowEffect:{rotate:0,stretch:0,depth:50,modifier:2.5},pagination:{el:".swiper-pagination",clickable:!0}});
+document.querySelector(".reviews-swiper")&&new Swiper(".reviews-swiper",{effect:"coverflow",grabCursor:!0,initialSlide:4,centeredSlides:!0,loop:!1,slidesPerView:"auto",coverflowEffect:{rotate:0,stretch:0,depth:50,modifier:2.5},pagination:{el:".swiper-pagination",clickable:!0}});

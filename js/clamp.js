@@ -1,1 +1,0 @@
-const texts=document.querySelectorAll(".reviews-slide__text");texts.forEach((e=>{$clamp(e,{clamp:23,useNativeClamp:!1})}));
