@@ -10,7 +10,9 @@ mixin album(album, albumNumber, albumMod, photoAmount, isEventAlbum)
                         | #{album.title}
                 else
                     h1.album__heading #{album.title}
-                p.album__subheading #{album.location}
+                //- p.album__subheading #{album.location}
+                if album.location
+                    p.album__subheading #{album.location}
                 p.album__subheading #{album.date}
         section.album__description
             .container.album__description--container
