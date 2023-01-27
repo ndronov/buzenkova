@@ -15,6 +15,10 @@ if(document.querySelector(".reviews-swiper")) {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-        }
+        },
+        navigation: {
+            nextEl: ".swiper-button-go",
+            prevEl: ".swiper-button-previous"
+        },
     });
 }
