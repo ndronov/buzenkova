@@ -16,6 +16,7 @@ if (popup) {
 
     function showReview() {
         popup.classList.add('modal--open');
+        popup.classList.remove('modal--close');
         popup.addEventListener('click', onOutsideModalClick);
         close.addEventListener('click', closeReview);
         document.body.classList.add('scroll-lock');
@@ -25,12 +26,13 @@ if (popup) {
     function closeReview() {
         document.body.classList.remove('scroll-lock');
         popup.classList.remove('scroll-lock-ios');
-        popup.classList.remove('modal--open')
+        setTimeout(() => popup.classList.remove('modal--open'), 1000);
+        popup.classList.add('modal--close');
         close.removeEventListener('click', closeReview);
     }
 
     function onOutsideModalClick(e) {
-        if (!e.target.classList.contains('nodal--open')) {
+        if (!e.target.classList.contains('modal--open')) {
             closeReview();
         }
     }
