@@ -24,12 +24,9 @@ const dialogContent = document.querySelector('.dialog__content');
 
 const onDialogOutsideClick = (e) => {
     const dialog = document.querySelector('.dialog');
-    let rect = dialog.getBoundingClientRect();
-    const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height
-    && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-    if (!isInDialog) {
+    if (e.target.classList.contains('dialog--open')) {
         document.body.classList.remove('scroll-lock');
-        dialog.close();
+        dialog.classList.remove('dialog--open');
     }
 }
 
@@ -53,8 +50,6 @@ const createSlides = (albumNumber, photosCount) => {
 const onPhotoClick = (e) => {
     if (e.target.closest('.album__item')) {
         document.body.classList.add('scroll-lock')
-        // const initialSlide = e.target.src.split('/')[7].replace('.jpg', '') - 1;
-        // const albumNumber = e.target.src.split('/')[6];
         let albumNumberRegexp = /albums\/(\d+)/i;
         let photoNumberRegexp = /(\d+)(?:.jpg)/i;
         const initialSlide = e.target.src.match(photoNumberRegexp)[1] - 1;
@@ -77,7 +72,7 @@ const onPhotoClick = (e) => {
             </div>
         `
         dialogContent.innerHTML = dialogInnerContent;
-        dialog.showModal()
+        dialog.classList.add('dialog--open');
         dialog.addEventListener('click', onDialogOutsideClick)
         dialog.addEventListener('close', () => {
             document.body.classList.remove('scroll-lock')

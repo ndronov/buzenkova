@@ -7,7 +7,7 @@ $color-default-black:               #000000;
 $black:                             #000000;
 $color-default-white:               #ffffff;
 $white:                             #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-transparent:                 rgba(0, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -16,6 +16,7 @@ $color-cupid:                       #f4a9c0;
 $main:                              #f4a9c0;
 $color-pink-swan:                   #b8abab;
 $color-ferra:                       #876e6e;
+$color-black-opacity-7:             rgba(0, 0, 0, 0.7);
 
 // Gradient
 $color-default-black-to-right:       linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
