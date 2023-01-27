@@ -1,0 +1,63 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: $ff-main;
+    line-height: 22px;
+    z-index: 10;
+}
+
+.modal--open {
+    display: flex;
+}
+
+.modal__container {
+    max-height: 600px;
+    max-width: 700px;
+    overflow: scroll;
+    position: relative;
+    padding: 50px 20px;
+    background-color: $color-default-white;
+}
+
+.modal__text {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.modal__text::-webkit-scrollbar {
+    display: none;
+}
+
+.modal__close-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $color-transparent;
+
+    &::after,
+    &::before {
+        @include pseudo(40px, 1.5px);
+        background-color: $color-default-black;
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}

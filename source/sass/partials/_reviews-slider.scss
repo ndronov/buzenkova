@@ -126,7 +126,6 @@
     min-width: 280px;
     min-height: 100%;
     max-height: 600px;
-    overflow: hidden;
     position: relative;
     transition: all 0.8s ease 0s;
 }
@@ -168,31 +167,4 @@
 
 .reviews-popup-close::after {
     transform: rotate(-45deg);
-}
-
-.modal-card {
-    max-height: 100vh;
-    overflow: scroll;
-    padding-top: 55px;
-    padding-bottom: 70px;
-
-    @media (min-width: 740px) {
-        overflow: hidden;
-    }
-
-    &__text {
-        white-space: pre-line;
-    }
-}
-
-.modal-card--open {
-    visibility: visible;
-    opacity: 1;
-    animation: myAnim 1s ease 0s 1 normal forwards;
-}
-
-.modal-card--close {
-    visibility: hidden;
-    opacity: 0;
-    animation: myAnimDown 0.3s ease 0s 1 normal forwards;
 }

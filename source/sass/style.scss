@@ -4,6 +4,7 @@
 @import "mixins";
 @import "keyframes";
 @import "partials/container";
+@import "partials/modal";
 @import "partials/timeline";
 @import "partials/header";
 @import "partials/burger-menu";
@@ -79,4 +80,10 @@ body {
     @include vp-768 {
         max-width: 800px;
     }
+}
+
+.scroll-lock-ios {
+    position: fixed;
+
+    overflow: hidden;
 }
