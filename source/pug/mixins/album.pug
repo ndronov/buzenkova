@@ -60,6 +60,7 @@ mixin album(album, albumNumber, albumMod, photoAmount, isEventAlbum)
                             li.album__item
                                 +picture('album__image','img/pics/albums/' + albumNumber + '/' + n++, 100, 100, 'тест')
                 button.album__button.calculation-form__btn Загрузить еще
-        dialog.dialog.swiper
-            .dialog__content.gallery
+        div.dialog
+            .swiper
+                .dialog__content.gallery
 

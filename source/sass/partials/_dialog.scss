@@ -1,11 +1,19 @@
 .dialog {
+    display: none;
     position: fixed;
-    display: flex;
+    top: 0;
     padding: 0;
-    max-height: calc(100vh - 60px);
     border: none;
     overflow: visible;
-    background-color: transparent;
+    background-color: $color-black-opacity-7;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog--open {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 .dialog__content {

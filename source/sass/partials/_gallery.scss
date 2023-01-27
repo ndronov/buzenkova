@@ -36,6 +36,7 @@
 
 .gallery__thumbs {
     display: none;
+    cursor: pointer;
 
     @include vp-768 {
         display: block;
