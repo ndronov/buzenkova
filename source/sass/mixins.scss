@@ -34,31 +34,30 @@
 
     @media (min-width: 1440px) {
         padding-bottom: 80px;
-        font-size: 58px;
     }
 }
 
-@mixin transform-title {
-    @include title-font;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
+// @mixin transform-title {
+//     @include title-font;
+//     font-size: 24px;
+//     text-transform: uppercase;
+//     padding-bottom: 20px;
 
-    @media (min-width: 920px) {
-        font-size: 30px;
-    }
+//     @media (min-width: 920px) {
+//         font-size: 30px;
+//     }
 
-    @media (min-width: 1200px) {
-        font-size: 46px;
-    }
+//     @media (min-width: 1200px) {
+//         font-size: 46px;
+//     }
 
-    @media (min-width: 1440px) {
-        position: absolute;
-        rotate: 90deg;
-        left: -185px;
-        top: 40%;
-    }
-}
+//     @media (min-width: 1440px) {
+//         position: absolute;
+//         rotate: 90deg;
+//         left: -185px;
+//         top: 40%;
+//     }
+// }
 
 @mixin btns {
     text-transform: uppercase;

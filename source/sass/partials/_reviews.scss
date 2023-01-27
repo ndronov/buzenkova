@@ -2,16 +2,18 @@
     position: relative;
 
     &__title {
-        @include transform-title;
+        @include title-font;
+        padding-bottom: 30px;
+        font-size: 24px;
 
-        @media (min-width: 1440px) {
-            position: absolute;
-            rotate: 270deg;
-            right: 0;
-            left: unset;
-            top: 37%;
-            padding-bottom: 0;
-        }
+        // @media (min-width: 1440px) {
+        //     position: absolute;
+        //     rotate: 270deg;
+        //     right: 0;
+        //     left: unset;
+        //     top: 37%;
+        //     padding-bottom: 0;
+        // }
     }
 
     &__wrapper {

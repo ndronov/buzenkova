@@ -49,7 +49,6 @@
 .calculation-form {
     @include flex;
     flex-direction: column;
-    gap: 10px;
     font-family: "Montserrat", "Arial", sans-serif;
 
     &__input {
@@ -73,6 +72,10 @@
         @include btns;
         margin-top: 30px;
     }
+}
+
+.calculation-form__input:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .calculation-form__input::placeholder {

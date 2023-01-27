@@ -28,7 +28,8 @@
     }
 
     &__title {
-        @include transform-title;
+        @include title-font;
+        font-size: 24px;
     }
 
     &__subtitle {
@@ -38,7 +39,7 @@
         padding-bottom: 0;
 
         @media (min-width: 1200px) {
-            font-size: 46px;
+            font-size: 30px;
         }
 
         @media (min-width: 1440px) {
@@ -50,14 +51,15 @@
         font-family: "Montserrat", "Arial", sans-serif;
         font-size: 16px;
         flex-wrap: wrap;
-        gap: 25px;
 
         @include ul-style;
         @include flex;
         align-items: flex-start;
 
         @media (min-width: 920px) {
-            gap: 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 30px;
         }
 
         @media (min-width: 1200px) {
@@ -104,6 +106,12 @@
 
     &__heading {
         padding-bottom: 15px;
+
+        @media (min-width: 1200px) {
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-top: 20px;
+        }
     }
 
     &__img {
@@ -115,6 +123,22 @@
 
     &__item {
         max-width: 290px;
+
+        &:not(:last-child) {
+            padding-bottom: 25px;
+        }
+
+        @media (min-width: 600px) {
+            &:nth-child(odd) {
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: 920px) {
+            &:nth-child(odd) {
+                margin-right: 0;
+            }
+        }
 
         @media (min-width: 1200px) {
             min-width: auto;
@@ -131,7 +155,6 @@
     @media (min-width: 1200px) {
         display: flex;
         flex-direction: row-reverse;
-        gap: 40px;
     }
 }
 
@@ -160,7 +183,6 @@
         @media (min-width: 1200px) {
             display: flex;
             flex-direction: row;
-            gap: 40px;
             align-items: flex-end;
         }
     }
@@ -184,7 +206,6 @@
         @media (min-width: 1200px) {
             display: flex;
             flex-direction: column-reverse;
-            gap: 30px;
         }
     }
 
@@ -204,7 +225,7 @@
     }
 
     @media (min-width: 1440px) {
-        right: 0;
+        right: -53px;
     }
 
     &__img {

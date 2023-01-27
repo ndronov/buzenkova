@@ -36,13 +36,9 @@
     }
 
     &__title {
-        @include transform-title;
+        @include title-font;
+        font-size: 18px;
         padding-bottom: 30px;
-        top: 280px;
-
-        @media (min-width: 1440px) {
-            top: 350px;
-        }
     }
 }
 
@@ -97,11 +93,6 @@
         font-weight: 400;
         line-height: 1.5;
         color: $black;
-
-        @include flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 20px;
 
         @media (min-width: 640px) {
             font-size: 14px;

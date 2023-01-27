@@ -2,18 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 
     .logo__icon {
         display: block;
         width: 140px;
         height: 140px;
+        margin-bottom: 20px;
+
+        @media (min-width: 1024px) {
+            margin-right: 15px;
+        }
     }
 
     .logo__text {
         text-transform: uppercase;
         font-family: $ff-secondary;
         font-size: 18px;
+        line-height: 40px;
     }
 
     @include vp-1024 {

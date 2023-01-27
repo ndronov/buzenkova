@@ -24,11 +24,6 @@
         @media (min-width: 920px) {
             flex-direction: row;
             align-items: flex-start;
-            gap: 20px;
-        }
-
-        @media (min-width: 1200px) {
-            gap: 40px;
         }
     }
 }
@@ -38,6 +33,18 @@
 
     @include flex;
     flex-direction: column;
+
+    @media (min-width: 920px) {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
 
     &__title {
         font-family: "Dela Gothic One", "Arial", sans-serif;

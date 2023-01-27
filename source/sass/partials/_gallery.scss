@@ -9,6 +9,7 @@
 .gallery__photos {
     width: 320px;
     position: relative;
+    padding-bottom: 20px;
 
     @include vp-768 {
         width: 100%;
