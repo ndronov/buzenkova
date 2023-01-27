@@ -12,6 +12,10 @@ if(document.querySelector(".reviews-swiper")) {
             depth: 50,
             modifier: 2.5,
         },
+        keyboard: {
+            enabled: true,
+            pageUpDown: true,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

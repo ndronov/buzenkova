@@ -8,7 +8,6 @@ if(document.querySelector(".ideas__swiper")) {
             enabled: true,
             pageUpDown: true,
         },
-        loop: true,
-        // nested: true,
+        loop: true
     });
 }
