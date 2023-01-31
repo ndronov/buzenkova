@@ -49,9 +49,9 @@
     border: none;
 
     @include vp-768 {
-        min-height: 188px;
-        max-height: 188px;
-        border-radius: 20px;
+        min-height: 257px;
+        max-height: 257px;
+        border-radius: 41px;
     }
 
     @media (min-width: 1024px) {
@@ -59,10 +59,6 @@
         max-height: 450px;
         border-radius: unset;
     }
-
-    // @include vp-1280 {
-    //     min-height: 540px;
-    // }
 }
 
 .about__video {
@@ -78,13 +74,12 @@
 
 .video-slide .video {
     margin-bottom: 0;
-    max-width: 187px;
+    max-width: 256px;
 
     @media (min-width: 768px) {
         rotate: 270deg;
-        min-width: 407px;
-        max-width: 407px;
-        max-height: 192px;
+        min-width: 457px;
+        max-width: 457px;
     }
 
     @media (min-width: 1024px) {
