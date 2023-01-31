@@ -2,6 +2,7 @@
     @include flex;
     flex-direction: column;
     position: relative;
+    padding-top: 50px;
 
     &__wrapper {
         @include flex;
@@ -20,7 +21,7 @@
     }
 
     &__heading {
-        padding-bottom: 65px;
+        padding-bottom: 100px;
 
         @media (min-width: 1440px) {
             padding-bottom: 100px;
@@ -82,7 +83,7 @@
     content: "";
     background: url("../img/pics/elements/decor.png") no-repeat;
     right: 0;
-    top: 100px;
+    top: 170px;
     min-width: 85px;
     min-height: 150px;
     background-size: cover;

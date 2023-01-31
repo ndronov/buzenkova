@@ -1,4 +1,6 @@
 .contacts {
+    padding-top: 50px;
+
     &__title {
         @include title-font;
         font-size: 24px;
