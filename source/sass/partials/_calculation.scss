@@ -17,7 +17,7 @@
 
         @media (min-width: 1440px) {
             max-width: 980px;
-            padding-bottom: 215px;
+            padding-bottom: 115px;
         }
     }
 
@@ -33,7 +33,7 @@
                 height: 200px;
                 top: -60px;
                 left: -130px;
-                rotate: 22deg;
+                transform: rotate(22deg);
                 background-size: cover;
 
                 @media (min-width: 1440px) {

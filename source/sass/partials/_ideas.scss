@@ -43,7 +43,7 @@
     height: 128px;
     top: 56px;
     left: 20px;
-    rotate: 343deg;
+    transform: rotate(343deg);
 
     @media (min-width: 960px) {
         background: url("../img/pics/elements/el1-big.png") no-repeat;

@@ -38,9 +38,16 @@
     }
 
     &__title {
-        @include title-font;
-        font-size: 18px;
-        padding-bottom: 30px;
+        @include transform-title;
+        // padding-bottom: 60px;
+
+        @media (min-width: 1460px) {
+            position: absolute;
+            transform: rotate(90deg);
+            left: -100px;
+            right: unset;
+            top: 30%;
+        }
     }
 }
 
