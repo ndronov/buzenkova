@@ -5,13 +5,18 @@
 }
 
 .video-swiper {
-    height: 30em;
+    height: 27em;
     top: -65px;
+
+    @media (min-width: 440px) {
+        top: 0;
+    }
 
     @media (min-width: 1024px) {
         top: 55px;
         max-width: 1240px;
         margin: 0 auto;
+        min-height: 35em;
     }
 }
 
@@ -32,31 +37,15 @@
 .swiper-button-prev {
     border-top: 2px solid $color-default-black;
     border-left: 2px solid $color-default-black;
-    left: 7px;
+    left: 3%;
     transform: rotate(-45deg);
-
-    @media (min-width: 375px) {
-        left: 15px;
-    }
-
-    @media (min-width: 500px) {
-        left: 55px;
-    }
 }
 
 .swiper-button-next {
     border-top: 2px solid $color-default-black;
     border-right: 2px solid $color-default-black;
     transform: rotate(45deg);
-    right: 7px;
-
-    @media (min-width: 375px) {
-        right: 15px;
-    }
-
-    @media (min-width: 500px) {
-        right: 55px;
-    }
+    right: 3%;
 }
 
 .swiper-button-prev::after,

@@ -3,17 +3,3 @@
 
     height: auto;
 }
-
-.video-slide {
-    background: url("../img/pics/elements/phone.png") no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    @media (min-width: 768px) {
-        rotate: 90deg;
-    }
-
-    @media (min-width: 1024px) {
-        background: none;
-    }
-}
