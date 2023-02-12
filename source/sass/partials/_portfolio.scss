@@ -48,7 +48,7 @@
         border-top: 1px solid #000000;
     }
 
-    &__link {
+    &__card {
         @include flex;
         align-items: flex-start;
         flex-direction: column;
@@ -71,6 +71,7 @@
         width: 100%;
         max-width: 320px;
         transition: all 0.3s ease;
+        margin-bottom: 15px;
     }
 
     &:not(:last-child) {
@@ -94,6 +95,6 @@
     }
 }
 
-.item__img--hover:hover {
-    box-shadow: 0 5px 12px 6px rgba(244, 169, 192, 0.7);
+.portfolio__card .portfolio__btn {
+    align-self: center;
 }
