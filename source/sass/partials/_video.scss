@@ -47,6 +47,10 @@
     height: 100%;
     min-height: 186px;
     border: none;
+
+    @include vp-768 {
+        min-height: 38rem;
+    }
 }
 
 .about__video {
