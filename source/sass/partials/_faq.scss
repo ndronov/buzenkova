@@ -1,5 +1,6 @@
 .faq {
     padding-bottom: 120px;
+    padding-top: 80px;
     position: relative;
 
     &__wrapper {
@@ -22,23 +23,31 @@
                 top: -80px;
 
                 @media (min-width: 1440px) {
-                    right: 220px;
+                    right: 140px;
                     width: 250px;
                     height: 250px;
+                    top: -135px;
                 }
             }
         }
 
         @media (min-width: 1440px) {
-            padding-top: 245px;
-            padding-bottom: 350px;
+            padding-top: 75px;
+            padding-bottom: 80px;
         }
     }
 
     &__title {
-        @include title-font;
-        font-size: 18px;
-        padding-bottom: 30px;
+        @include transform-title;
+        // padding-bottom: 60px;
+
+        @media (min-width: 1460px) {
+            position: absolute;
+            transform: rotate(90deg);
+            left: -100px;
+            right: unset;
+            top: 30%;
+        }
     }
 }
 

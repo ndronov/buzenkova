@@ -3,18 +3,3 @@
 
     height: auto;
 }
-
-.video-slide {
-    background: url("../img/pics/elements/review-background.png") no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    @media (min-width: 768px) {
-        rotate: 90deg;
-    }
-
-    @media (min-width: 1024px) {
-        rotate: none;
-        background: none;
-    }
-}

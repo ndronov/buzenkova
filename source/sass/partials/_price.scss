@@ -2,6 +2,7 @@
     @include flex;
     flex-direction: column;
     position: relative;
+    padding-top: 50px;
 
     &__wrapper {
         @include flex;
@@ -14,13 +15,13 @@
             padding: 0 90px 120px;
         }
 
-        @media (min-width: 1200px) {
-            padding-bottom: 1500px;
+        @media (min-width: 1440px) {
+            padding-bottom: 1790px;
         }
     }
 
     &__heading {
-        padding-bottom: 65px;
+        padding-bottom: 90px;
 
         @media (min-width: 1440px) {
             padding-bottom: 100px;
@@ -29,6 +30,7 @@
 
     &__title {
         @include title-font;
+        padding-bottom: 20px;
         font-size: 24px;
     }
 
@@ -67,12 +69,12 @@
             max-width: 980px;
             position: relative;
             font-size: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
         }
 
         @media (min-width: 1440px) {
             font-size: 24px;
+            min-width: 1024px;
+            max-width: 1024px;
         }
     }
 }
@@ -82,10 +84,16 @@
     content: "";
     background: url("../img/pics/elements/decor.png") no-repeat;
     right: 0;
-    top: 100px;
-    min-width: 85px;
-    min-height: 150px;
+    top: 140px;
+    min-width: 70px;
+    min-height: 115px;
     background-size: cover;
+
+    @media (min-width: 700px) {
+        top: 90px;
+        min-width: 95px;
+        min-height: 150px;
+    }
 
     @media (min-width: 920px) {
         top: 25px;
@@ -109,8 +117,8 @@
 
         @media (min-width: 1200px) {
             padding-right: 25px;
-            padding-left: 25px;
             padding-top: 20px;
+            max-width: 440px;
         }
     }
 
@@ -119,6 +127,11 @@
         max-width: 290px;
         height: auto;
         transition: all 0.3s ease;
+
+        @media (min-width: 1200px) {
+            min-width: 400px;
+            max-width: 400px;
+        }
     }
 
     &__item {
@@ -151,36 +164,15 @@
     box-shadow: 0 5px 12px 6px rgba(244, 169, 192, 0.7);
 }
 
-.basic__link {
-    @media (min-width: 1200px) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-}
-
-.basic {
-    @media (min-width: 1200px) {
-        position: absolute;
-        left: 0;
-    }
-
-    &__img {
-        @media (min-width: 1200px) {
-            min-width: 600px;
-            max-width: 600px;
-        }
-    }
-}
-
-.optimum {
-    @media (min-width: 1200px) {
+.premium {
+    @media (min-width: 1440px) {
         position: absolute;
         right: 0;
-        top: 240px;
+        top: 230px;
     }
 
     &__link {
-        @media (min-width: 1200px) {
+        @media (min-width: 1440px) {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
@@ -188,22 +180,43 @@
     }
 
     &__img {
-        @media (min-width: 1200px) {
-            min-width: 460px;
-            max-width: 460px;
+        @media (min-width: 1440px) {
+            max-width: 450px;
+        }
+    }
+}
+
+.optimum {
+    @media (min-width: 1440px) {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__link {
+        @media (min-width: 1440px) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+        }
+    }
+
+    &__img {
+        @media (min-width: 1440px) {
+            max-width: 410px;
+            margin-right: 25px;
         }
     }
 }
 
 .coordination {
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
         position: absolute;
-        left: 0;
-        top: 625px;
+        top: 990px;
     }
 
     &__link {
-        @media (min-width: 1200px) {
+        @media (min-width: 1440px) {
             display: flex;
             flex-direction: column-reverse;
         }
@@ -211,25 +224,26 @@
 
     &__img {
         @media (min-width: 1200px) {
-            min-width: 350px;
-            max-width: 350px;
+            min-width: 424px;
+            max-width: 424px;
+        }
+
+        @media (min-width: 1440px) {
+            min-width: 450px;
+            max-width: 450px;
         }
     }
 }
 
 .planning {
-    @media (min-width: 1200px) {
-        position: absolute;
-        right: 0;
-        top: 620px;
-    }
-
     @media (min-width: 1440px) {
-        right: -53px;
+        position: absolute;
+        right: -15px;
+        top: 1000px;
     }
 
     &__img {
-        @media (min-width: 1200px) {
+        @media (min-width: 1440px) {
             min-width: 320px;
             max-width: 320px;
         }

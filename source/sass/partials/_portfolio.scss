@@ -1,4 +1,6 @@
 .portfolio {
+    padding-top: 50px;
+
     &__wrapper {
         @include flex;
         flex-direction: column;

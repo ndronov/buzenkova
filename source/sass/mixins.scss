@@ -22,7 +22,7 @@
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 
     @media (min-width: 920px) {
         font-size: 30px;
@@ -37,27 +37,27 @@
     }
 }
 
-// @mixin transform-title {
-//     @include title-font;
-//     font-size: 24px;
-//     text-transform: uppercase;
-//     padding-bottom: 20px;
+@mixin transform-title {
+    @include title-font;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 60px;
 
-//     @media (min-width: 920px) {
-//         font-size: 30px;
-//     }
+    @media (min-width: 920px) {
+        font-size: 30px;
+    }
 
-//     @media (min-width: 1200px) {
-//         font-size: 46px;
-//     }
+    @media (min-width: 1200px) {
+        font-size: 46px;
+    }
 
-//     @media (min-width: 1440px) {
-//         position: absolute;
-//         rotate: 90deg;
-//         left: -185px;
-//         top: 40%;
-//     }
-// }
+    @media (min-width: 1460px) {
+        position: absolute;
+        transform: rotate(270deg);
+        right: -50px;
+        top: 30%;
+    }
+}
 
 @mixin btns {
     text-transform: uppercase;

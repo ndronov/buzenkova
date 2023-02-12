@@ -1,27 +1,20 @@
 .reviews {
     position: relative;
+    padding-top: 50px;
 
     &__title {
-        @include title-font;
-        padding-bottom: 30px;
-        font-size: 24px;
-
-        // @media (min-width: 1440px) {
-        //     position: absolute;
-        //     rotate: 270deg;
-        //     right: 0;
-        //     left: unset;
-        //     top: 37%;
-        //     padding-bottom: 0;
-        // }
+        @include transform-title;
     }
 
     &__wrapper {
         padding-bottom: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin: 0 auto;
+        max-width: 1294px;
 
         @media (min-width: 1440px) {
-            max-width: 1030px;
+            max-width: 1171px;
         }
     }
 
