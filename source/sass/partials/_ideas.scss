@@ -3,15 +3,20 @@
     padding-top: 60px;
 
     @include flex;
+    flex-direction: column;
 
     &__wrapper {
         @include flex;
         flex-direction: column;
         position: relative;
+        padding: 0 20px;
+        max-width: 500px;
 
         @media (min-width: 960px) {
             flex-direction: row;
-            max-width: 1200px;
+            justify-content: space-around;
+            min-width: 960px;
+            max-width: 960px;
             padding-left: 50px;
             padding-right: 50px;
             align-items: flex-start;
@@ -19,12 +24,20 @@
 
         @media (min-width: 1200px) {
             align-items: flex-start;
+            min-width: 900px;
+            max-width: 900px;
+            justify-content: space-between;
         }
 
-        @media (min-width: 1440px) {
-            min-width: 1440px;
-            max-width: 1440px;
+        @media (min-width: 1240px) {
+            min-width: 1200px;
+            max-width: 1200px;
+            justify-content: space-around;
         }
+    }
+
+    &__swiper {
+        padding-bottom: 0;
     }
 
     &__title {
@@ -32,36 +45,60 @@
         font-size: 24px;
         max-width: 590px;
     }
+
+    &__text {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 16px;
+        padding-bottom: 25px;
+        text-align: center;
+        max-width: 450px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        align-self: center;
+
+        @media (min-width: 1200px) {
+            font-size: 22px;
+        }
+    }
+
+    &__btn {
+        @include btns;
+    }
 }
 
 .ideas__wrapper::after {
-    position: absolute;
-    z-index: 99;
-    content: "";
-    background: url("../img/pics/elements/el1.png") no-repeat;
-    width: 50px;
-    height: 128px;
-    top: 56px;
-    left: 20px;
-    transform: rotate(343deg);
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+        position: absolute;
+        z-index: 99;
+        content: "";
+        background: url("../img/pics/elements/el1.png") no-repeat;
+        width: 50px;
+        height: 128px;
+        top: -15px;
+        left: -40px;
+        transform: rotate(343deg);
+    }
 
     @media (min-width: 960px) {
         background: url("../img/pics/elements/el1-big.png") no-repeat;
         background-size: cover;
-        width: 100px;
-        height: 235px;
-        top: 75px;
-        left: 215px;
+        width: 60px;
+        height: 145px;
+        top: -65px;
+        left: 175px;
     }
 
-    @media (min-width: 1200px) {
-        left: 60px;
-        top: 130px;
+    @media (min-width: 1240px) {
+        left: 180px;
+        width: 120px;
+        height: 280px;
+        top: -158px;
     }
+}
 
-    @media (min-width: 1440px) {
-        left: 35px;
-        width: 140px;
-        height: 330px;
-    }
+.swiper-pagination-bullet-active {
+    background: $color-cupid;
 }

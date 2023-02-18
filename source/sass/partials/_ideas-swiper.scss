@@ -13,61 +13,92 @@
     }
 }
 
+.swiper-pag {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
 .swiper-button-back,
 .swiper-button-forward {
-    display: inline-flex;
-    width: 13px;
-    height: 13px;
-    z-index: 9;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
+    display: none;
 
-    @media (min-width: 490px) {
+    @media (min-width: 768px) {
+        display: inline-flex;
+        width: 13px;
+        height: 13px;
+        z-index: 9;
+        cursor: pointer;
+        position: absolute;
+        top: 55%;
+    }
+
+    @media (min-width: 768px) {
         width: 23px;
         height: 23px;
     }
 }
 
 .swiper-button-back {
-    border-top: 2px solid $color-cupid;
-    border-left: 2px solid $color-cupid;
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
     transform: rotate(-45deg);
-    left: 7px;
-
-    @media (min-width: 490px) {
-        left: 60px;
-        border-top: 2px solid $color-default-black;
-        border-left: 2px solid $color-default-black;
-    }
+    left: 55px;
 
     @media (min-width: 960px) {
-        display: none;
+        left: 555px;
+        top: 175px;
+    }
+
+    @media (min-width: 1200px) {
+        left: 525px;
+    }
+
+    @media (min-width: 1240px) {
+        left: 595px;
+        top: 275px;
+    }
+
+    @media (min-width: 1440px) {
+        left: 585px;
+        top: 275px;
+        width: 33px;
+        height: 33px;
+        border-top: 3px solid $black;
+        border-left: 3px solid $black;
     }
 }
 
 .swiper-button-forward {
-    border-top: 2px solid $color-cupid;
-    border-right: 2px solid $color-cupid;
+    border-top: 2px solid $black;
+    border-right: 2px solid $black;
     transform: rotate(45deg);
-    right: 7px;
-
-    @media (min-width: 490px) {
-        right: 60px;
-        border-top: 2px solid $color-default-black;
-        border-right: 2px solid $color-default-black;
-    }
+    right: 55px;
 
     @media (min-width: 960px) {
-        right: 20px;
+        right: 40px;
+        top: 175px;
+    }
+
+    @media (min-width: 1200px) {
+        right: 5px;
+    }
+
+    @media (min-width: 1240px) {
+        right: 40px;
+        top: 275px;
     }
 
     @media (min-width: 1440px) {
-        right: 60px;
+        right: 50px;
         width: 33px;
         height: 33px;
-        border-top: 4px solid $color-default-black;
-        border-right: 4px solid $color-default-black;
+        border-top: 3px solid $black;
+        border-right: 3px solid $black;
     }
 }
 

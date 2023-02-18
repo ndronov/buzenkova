@@ -4,6 +4,10 @@ if(document.querySelector(".ideas__swiper")) {
             nextEl: ".swiper-button-forward",
             prevEl: ".swiper-button-back"
         },
+        pagination: {
+            el: '.swiper-pag',
+            clickable: true,
+        },
         keyboard: {
             enabled: true,
             pageUpDown: true,
