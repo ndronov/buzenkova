@@ -1,1 +1,1 @@
-document.querySelector(".ideas__swiper")&&new Swiper(".ideas__swiper",{navigation:{nextEl:".swiper-button-forward",prevEl:".swiper-button-back"},keyboard:{enabled:!0,pageUpDown:!0},loop:!0});
+document.querySelector(".ideas__swiper")&&new Swiper(".ideas__swiper",{navigation:{nextEl:".swiper-button-forward",prevEl:".swiper-button-back"},pagination:{el:".swiper-pag",clickable:!0},keyboard:{enabled:!0,pageUpDown:!0},loop:!0});
