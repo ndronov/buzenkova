@@ -78,7 +78,7 @@ select {
 select:focus,
 input:focus,
 button:focus {
-    outline: 2px solid $color-cupid;
+    outline: none;
     border: 2px solid $color-cupid;
 }
 
